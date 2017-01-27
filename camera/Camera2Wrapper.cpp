@@ -131,6 +131,9 @@ static char * camera2_fixup_setparams(int id __unused, const char * settings)
         }
     }
 
+    // set preview-fps-range for video
+    params.set("preview-fps-range", "7500,30000");
+
 #ifdef LOG_PARAMETERS
     ALOGV("%s: Fixed parameters:", __FUNCTION__);
     params.dump();
