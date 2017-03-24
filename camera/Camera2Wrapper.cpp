@@ -37,6 +37,8 @@ typedef struct wrapper_camera2_device {
 #define CAMERA_ID(device) (((wrapper_camera2_device_t *)(device))->id)
 
 static camera_module_t *gVendorModule = 0;
+static preview_stream_ops *gPreviewWindow = 0;
+static bool gPreviewStartDeferred = false;
 
 static int check_vendor_module()
 {
@@ -112,12 +114,25 @@ static char * camera2_fixup_setparams(int id __unused, const char * settings)
 static int camera2_set_preview_window(struct camera_device * device,
         struct preview_stream_ops *window)
 {
+    int rc = 0;
     ALOGV("%s->%08X->%08X", __FUNCTION__, (uintptr_t)device, (uintptr_t)(((wrapper_camera2_device_t*)device)->vendor));
 
-    if(!device || !window)
+    if(!device)
         return -EINVAL;
 
-    return VENDOR_CALL(device, set_preview_window, window);
+    gPreviewWindow = window;
+
+    if (gPreviewWindow != 0) {
+        rc = VENDOR_CALL(device, set_preview_window, window);
+
+        if (gPreviewStartDeferred) {
+            ALOGV("%s call deferred start_preview", __FUNCTION__);
+            gPreviewStartDeferred = false;
+            VENDOR_CALL(device, start_preview);
+        }
+    }
+
+    return rc;
 }
 
 static void camera2_set_callbacks(struct camera_device * device,
@@ -173,7 +188,13 @@ static int camera2_start_preview(struct camera_device * device)
     if(!device)
         return -EINVAL;
 
-    rc = VENDOR_CALL(device, start_preview);
+    if (gPreviewWindow != 0) {
+        rc = VENDOR_CALL(device, start_preview);
+    } else {
+        ALOGV("%s invalid preview window, defer start_preview", __FUNCTION__);
+        gPreviewStartDeferred = true;
+    }
+
     return rc;
 }
 
@@ -194,7 +215,12 @@ static int camera2_preview_enabled(struct camera_device * device)
     if(!device)
         return -EINVAL;
 
-    return VENDOR_CALL(device, preview_enabled);
+    if (gPreviewStartDeferred) {
+        ALOGV("%s deferred start_preview, return 1", __FUNCTION__);
+        return 1;
+    } else {
+        return VENDOR_CALL(device, preview_enabled);
+    }
 }
 
 static int camera2_store_meta_data_in_buffers(struct camera_device * device, int enable)
@@ -381,6 +407,8 @@ static int camera2_device_close(hw_device_t* device)
         free(wrapper_dev->base.ops);
     free(wrapper_dev);
 done:
+    gPreviewWindow = 0;
+    gPreviewStartDeferred = false;
     return ret;
 }
 
