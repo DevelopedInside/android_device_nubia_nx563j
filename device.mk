@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)
-
 # Device was launched with N-MR1
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
@@ -100,3 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)

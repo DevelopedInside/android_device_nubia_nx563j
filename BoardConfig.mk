@@ -15,7 +15,7 @@
 #
 
 # Inherit from common msm8998-common
--include device/nubia/msm8998-common/BoardConfigCommon.mk
+include device/nubia/msm8998-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/nubia/nx563j
 
@@ -50,4 +50,4 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
--include vendor/nubia/nx563j/BoardConfigVendor.mk
+include vendor/nubia/nx563j/BoardConfigVendor.mk
