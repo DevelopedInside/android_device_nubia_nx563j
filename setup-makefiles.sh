@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=cheeseburger
-VENDOR=oneplus
+DEVICE=nx563j
+VENDOR=nubia
 
 INITIAL_COPYRIGHT_YEAR=2017
 
