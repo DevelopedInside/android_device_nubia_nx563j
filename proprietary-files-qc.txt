@@ -300,10 +300,15 @@ vendor/lib/libvqzip.so
 -priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib64/libconnctrl.so
 vendor/lib64/libQtiTether.so
+vendor/lib/libQtiTether.so
+vendor/lib/libconnctrl.so
 
 # Perf
 bin/energy-awareness
 bin/msm_irqbalance
+
+# Powerhint
+etc/powerhint.xml
 
 # Peripheral manager
 bin/pm-proxy
