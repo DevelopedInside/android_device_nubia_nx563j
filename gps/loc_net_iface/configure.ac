@@ -1,11 +1,11 @@
-# configure.ac -- Autoconf script for gps lbs-core
+# configure.ac -- Autoconf script for gps loc-net-iface
 #
 # Process this file with autoconf to produce a configure script
 
 # Requires autoconf tool later than 2.61
 AC_PREREQ(2.61)
 # Initialize the gps lbs-core package version 1.0.0
-AC_INIT([gnsspps],1.0.0)
+AC_INIT([loc-net-iface],1.0.0)
 # Does not strictly follow GNU Coding standards
 AM_INIT_AUTOMAKE([foreign])
 # Disables auto rebuilding of configure, Makefile.ins
@@ -37,6 +37,26 @@ PKG_CHECK_MODULES([GPSUTILS], [gps-utils])
 AC_SUBST([GPSUTILS_CFLAGS])
 AC_SUBST([GPSUTILS_LIBS])
 
+PKG_CHECK_MODULES([LOCHAL], [loc-hal])
+AC_SUBST([LOCHAL_CFLAGS])
+AC_SUBST([LOCHAL_LIBS])
+
+PKG_CHECK_MODULES([QMIF], [qmi-framework])
+AC_SUBST([QMIF_CFLAGS])
+AC_SUBST([QMIF_LIBS])
+
+PKG_CHECK_MODULES([DATA], [data])
+AC_SUBST([DATA_CFLAGS])
+AC_SUBST([DATA_LIBS])
+
+PKG_CHECK_MODULES([QMI], [qmi])
+AC_SUBST([QMI_CFLAGS])
+AC_SUBST([QMI_LIBS])
+
+PKG_CHECK_MODULES([DSUTILS], [dsutils])
+AC_SUBST([DSUTILS_CFLAGS])
+AC_SUBST([DSUTILS_LIBS])
+
 AC_ARG_WITH([glib],
       AC_HELP_STRING([--with-glib],
          [enable glib, building HLOS systems which use glib]))
@@ -58,7 +78,7 @@ AM_CONDITIONAL(USE_GLIB, test "x${with_glib}" = "xyes")
 
 AC_CONFIG_FILES([ \
         Makefile \
-        gnsspps.pc
+        loc-net-iface.pc
         ])
 
 AC_OUTPUT

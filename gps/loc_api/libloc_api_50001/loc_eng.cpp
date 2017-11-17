@@ -218,6 +218,10 @@ static void* noProc(void* data)
     return NULL;
 }
 
+/* Fetch AGPS status cb from loc_net_iface module */
+static agps_status_extended loc_eng_get_status_cb(
+        loc_eng_data_s_type& locEngData);
+
 /*********************************************************************
  * definitions of the static messages used in the file
  *********************************************************************/
@@ -922,6 +926,10 @@ void LocEngReportSv::proc() const {
             if (svUsedIdMask & (1 << (gnssSvId - 1)))
             {
                 gnssSvStatus.gnss_sv_list[i].flags |= LOC_GNSS_SV_FLAGS_USED_IN_FIX;
+            }
+            else
+            {
+                gnssSvStatus.gnss_sv_list[i].flags &= ~LOC_GNSS_SV_FLAGS_USED_IN_FIX;
             }
         }
     }
@@ -2406,11 +2414,23 @@ void loc_eng_agps_init(loc_eng_data_s_type &loc_eng_data, AGpsExtCallbacks* call
     STATE_CHECK((NULL == loc_eng_data.agps_status_cb),
                 "agps instance already initialized",
                 return);
+
+    /* Override callback if not specified */
+    AGpsExtCallbacks localCb = {0};
     if (callbacks == NULL) {
-        LOC_LOGE("loc_eng_agps_init: bad parameters cb %p", callbacks);
+        callbacks = &localCb;
+    }
+    if (callbacks->status_cb == NULL) {
+        LOC_LOGI("Overriding status_cb()");
+        callbacks->status_cb =
+                loc_eng_get_status_cb(loc_eng_data);
+    }
+    if (callbacks->status_cb == NULL) {
+        LOC_LOGE("No status_cb !");
         EXIT_LOG(%s, VOID_RET);
         return;
     }
+
     LocEngAdapter* adapter = loc_eng_data.adapter;
     loc_eng_data.agps_status_cb = callbacks->status_cb;
 
@@ -2588,6 +2608,66 @@ int loc_eng_agps_open_failed(loc_eng_data_s_type &loc_eng_data, AGpsExtType agps
 
     EXIT_LOG(%d, 0);
     return 0;
+}
+
+/* Callbacks registered with loc_net_iface library */
+static void loc_eng_open_result_cb (
+        bool isSuccess, AGpsExtType agpsType, const char* apn,
+        AGpsBearerType bearerType, void* userDataPtr){
+
+    ENTRY_LOG();
+    loc_eng_data_s_type* locEngDataPtr = (loc_eng_data_s_type*)userDataPtr;
+    if (locEngDataPtr == NULL) {
+        LOC_LOGE("NULL locEngDataPtr");
+        return;
+    }
+    if (isSuccess) {
+        loc_eng_agps_open(*locEngDataPtr, agpsType, apn, bearerType);
+    } else {
+        loc_eng_agps_open_failed(*locEngDataPtr, agpsType);
+    }
+}
+static void loc_eng_close_result_cb (
+        bool isSuccess, AGpsExtType agpsType, void* userDataPtr){
+
+    ENTRY_LOG();
+    loc_eng_data_s_type* locEngDataPtr = (loc_eng_data_s_type*)userDataPtr;
+    if (locEngDataPtr == NULL) {
+        LOC_LOGE("NULL locEngDataPtr");
+        return;
+    }
+    if (isSuccess) {
+        loc_eng_agps_closed(*locEngDataPtr, agpsType);
+    } else {
+        LOC_LOGE("AGPS close failed !");
+    }
+}
+/* Fetch the status callback from loc_net_iface library.
+ * loc_eng_data reference is retained and used while invoking
+ * open_result and close_result APIs */
+static agps_status_extended loc_eng_get_status_cb (
+        loc_eng_data_s_type& locEngData)
+{
+    ENTRY_LOG();
+
+    /* Check for loc_net_iface library */
+    void *handle = NULL;
+    if ((handle = dlopen("libloc_net_iface.so", RTLD_NOW)) != NULL) {
+
+        LocAgpsGetStatusCb getStatusCbMethod = (LocAgpsGetStatusCb)
+                dlsym(handle, "LocNetIfaceAgps_getStatusCb");
+        if (getStatusCbMethod == NULL) {
+            LOC_LOGE("Failed to get method LocNetIfaceAgps_getStatusCb");
+            return NULL;
+        }
+        return getStatusCbMethod(
+                loc_eng_open_result_cb, loc_eng_close_result_cb,
+                (void*)&locEngData);
+    } else {
+
+        LOC_LOGE("libloc_net_iface.so not found !");
+        return NULL;
+    }
 }
 
 /*===========================================================================

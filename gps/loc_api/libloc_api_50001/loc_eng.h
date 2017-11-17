@@ -200,6 +200,19 @@ int loc_eng_gps_measurement_init(loc_eng_data_s_type &loc_eng_data,
                                  LocGpsMeasurementCallbacks* callbacks);
 void loc_eng_gps_measurement_close(loc_eng_data_s_type &loc_eng_data);
 
+/* Constructs for interaction with loc_net_iface library */
+typedef void (*LocAgpsOpenResultCb)(
+        bool isSuccess, AGpsExtType agpsType, const char* apn,
+        AGpsBearerType bearerType, void* userDataPtr);
+
+typedef void (*LocAgpsCloseResultCb)(
+        bool isSuccess, AGpsExtType agpsType, void* userDataPtr);
+
+/* Method to fetch status cb from loc_net_iface library */
+typedef agps_status_extended (*LocAgpsGetStatusCb)(
+        LocAgpsOpenResultCb openResultCb,
+        LocAgpsCloseResultCb closeResultCb, void* userDataPtr);
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
