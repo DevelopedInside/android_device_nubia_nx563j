@@ -8,10 +8,6 @@
     "target_path": "kernel/nubia/msm8998"
   },
   {
-   "repository": "android_vendor_nubia_nx563j",
-   "target_path": "vendor/nubia/nx563j"
-  },
-  {
    "repository": "android_packages_resources_devicesettings",
    "target_path": "packages/resources/devicesettings"
   }
