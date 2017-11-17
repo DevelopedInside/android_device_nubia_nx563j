@@ -82,11 +82,6 @@ on fs
     restorecon_recursive /persist
     write /sys/kernel/boot_adsp/boot 1
 
-on post-fs
-    start qseecomd
-    exec - root root root -- /system/bin/init.qti.qseecomd.sh
-    write /dev/ipa 1
-
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 

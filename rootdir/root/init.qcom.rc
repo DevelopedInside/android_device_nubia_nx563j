@@ -28,7 +28,6 @@
 import init.nubia.usb.rc
 import init.msm.usb.configfs.rc
 import init.target.rc
-import init.nubia.ffbm.rc
 # nubia rc
 import init.nubia.rc
 
