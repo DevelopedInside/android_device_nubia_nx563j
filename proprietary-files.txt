@@ -505,7 +505,7 @@ etc/firmware/ipa_fws.b04
 etc/firmware/ipa_fws.mdt
 
 # NFC firmware
-#vendor/firmware/libpn553_fw.so
+vendor/firmware/Generic_unsigned_706.ncd
 
 # Sensors
 etc/sensors/hals.conf
