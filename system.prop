@@ -63,6 +63,12 @@ persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
 ro.gps.agps_provider=1
 
+# NFC
+persist.nfc.smartcard.config=SIM1,eSE1
+persist.sys.switch_se=2
+persist.sys.remove_beam=0
+persist.sys.nfc_reader_twinkle=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
@@ -301,4 +307,3 @@ ro.thermal.product=0
 #thermal product perf config
 persist.product.perf=1
 
-persist.nfc.smartcard.config=SIM1,eSE1
