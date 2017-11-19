@@ -41,6 +41,12 @@ dolby.monospeaker=false
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 
+# Cabl
+ro.qualcomm.cabl=0
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/system/etc/calib.cfg
+ro.qcom.ad.sensortype=2
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
