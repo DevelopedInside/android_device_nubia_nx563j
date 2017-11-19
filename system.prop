@@ -26,16 +26,19 @@ audio.offload.gapless.enabled=true
 audio.safx.pbe.enabled=true
 audio.parser.ip.buffer.size=0
 flac.sw.decoder.24bit.support=true
-persist.bt.a2dp_offload_cap=sbc
 use.qti.sw.alac.decoder=true
 use.qti.sw.ape.decoder=true
 qcom.hw.aac.encoder=true
 fm.a2dp.conc.disabled=true
 audio.noisy.broadcast.delay=600
 audio.offload.pstimeout.secs=3
+drm.service.enabled=true
 
 audio.effect.name=dolby
 dolby.monospeaker=false
+#Dolby DS1 DOLBY_UDC
+dmid=3067269873
+audio.ds1.metainfo.key=273
 
 # Bluetooth
 ro.bluetooth.emb_wp_mode=false
