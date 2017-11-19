@@ -532,6 +532,8 @@ lib/lib_fpc_tac_shared.so
 lib64/lib_fpc_tac_shared.so
 
 # Graphics firmware
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
 etc/firmware/a530_pfp.fw
 etc/firmware/a530_pm4.fw
 etc/firmware/a540_gpmu.fw2
@@ -552,17 +554,16 @@ etc/firmware/ipa_fws.mdt
 
 # NFC firmware
 vendor/firmware/Generic_unsigned_706.ncd
-
-# TP firmware
-etc/firmware/nubia_tp_jdi_fw.img
-
-# Misc
 vendor/firmware/BCM20797A1_001.002.015.2562.0011_Generic_I2C_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0007_I2C_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0010_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0010_I2C_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2564.0002_Generic_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2565.0005_Generic_NCD_Unsigned_configdata.ncd
 
+# TP firmware
+etc/firmware/nubia_tp_jdi_fw.img
+
+# Misc
 vendor/firmware/Generic_unsigned.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
 vendor/firmware/Generic_unsigned_222_1.ncd
