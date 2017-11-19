@@ -41,6 +41,11 @@ dmid=3067269873
 audio.ds1.metainfo.key=273
 
 # Bluetooth
+bt.max.hfpclient.connections=1
+persist.bt.a2dp.aac_disable=true
+persist.bt.a2dp_offload_cap=sbc
+qcom.bluetooth.soc=cherokee
+ro.bluetooth.a4wp=false
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 
