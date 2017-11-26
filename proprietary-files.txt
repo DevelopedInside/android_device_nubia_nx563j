@@ -32,6 +32,12 @@ etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Headset_cal.acdb
 etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Speaker_cal.acdb
 etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_workspaceFile.qwsp
 
+# Audio amplifer TAS2555
+bin/tas2555-ftc
+lib/libTAS2555ftc.so
+lib64/libTAS2555ftc.so
+etc/firmware/tas2555_uCDSP.bin
+
 # Camera
 bin/mm-qcamera-app
 bin/mm-qcamera-daemon
@@ -563,7 +569,6 @@ etc/firmware/nubia_tp_jdi_fw.img
 # Misc
 etc/firmware/miniBoot.bin
 etc/firmware/SCTable.asb
-etc/firmware/tas2555_uCDSP.bin
 etc/firmware/TBM_D2.bin
 vendor/firmware/Generic_unsigned.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
