@@ -1,0 +1,42 @@
+
+; TAS2555 Factory Test and Calibration Configuration File
+; -----------------------------------------------------------------------------
+; PPC3 File: NX563J_dolby_voice_music_20170331.ppc3
+; DDC Name: tas2555_uCDSP
+; Comments: [Write Comments Here]
+
+; FTC Settings
+FTC_BYPASS                = 0        ; Refer to documentation
+TEST_DELTA_T              = 85       ; Delta Temperature Limit during verification phase
+CALIBRATION_TIME          = 6000     ; Duration (in ms) of calibration phase
+VERIFICATION_TIME         = 4000     ; Duration (in ms) of the verification phase
+NFS                       = 0.0004   ; Trade-off between f0-Q accuracy and tracking speed 
+SCTH                      = 0.99999  ; Refer to documentation 
+CONFIGURATION             = 0        ; Refer to documentation
+CONFIGURATION_CALIBRATION = 3        ; Refer to documentation
+
+; Pass/Fail Limits
+RE_HI                     = 7.975
+RE_LO                     = 6.025
+F0_HI                     = 3000
+F0_LO                     = 1
+Q_HI                      = 10.001
+Q_LO                      = 0.001
+T_HI                      = 60
+T_LO                      = 0
+
+; Obtained from Speaker Manufacturer
+SPK_T_MAX                 = 105      ; Speaker Maximum Temperature (C)
+SPK_RE_TOL_PER            = 10       ; Re +/- tolerance (%)
+SPK_RE_ALPHA              = 0.0034   ; Temperature coefficient alpha (1/K)
+
+; Obtained from PurePath Console 3 (PPC3)
+PPC3_RE0                  = 7.41     ; Re0 (ohm)
+PPC3_RTV                  = 33.3     ; Rtv (K/W)
+PPC3_RTM                  = 23.9     ; Rtm  (K/W)
+PPC3_RTVA                 = 2509     ; Rtva  (K/W)
+PPC3_SYSGAIN              = 9.35     ; System Gain (V/FS)
+PPC3_DEV_NONLIN_PER       = 1.5      ; Device Non-linearity (%)
+PPC3_DELTA_T_LIMIT        = 85       ; Delta Thermal Limit (C)
+FS_RATE                   = 48000    ; TAS2555 Sample Rate
+

@@ -18,49 +18,11 @@
 
 set -e
 
-DEVICE=nx563j
-VENDOR=nubia
+# Required!
+export DEVICE=nx563j
+export DEVICE_COMMON=msm8998-common
+export VENDOR=nubia
 
-# Load extract_utils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+export DEVICE_BRINGUP_YEAR=2017
 
-CM_ROOT="$MY_DIR"/../../..
-
-HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
-    exit 1
-fi
-. "$HELPER"
-
-# Default to sanitizing the vendor folder before extraction
-CLEAN_VENDOR=true
-
-while [ "$1" != "" ]; do
-    case $1 in
-        -p | --path )           shift
-                                SRC=$1
-                                ;;
-        -s | --section )        shift
-                                SECTION=$1
-                                CLEAN_VENDOR=false
-                                ;;
-        -n | --no-cleanup )     CLEAN_VENDOR=false
-                                ;;
-    esac
-    shift
-done
-
-if [ -z "$SRC" ]; then
-    SRC=adb
-fi
-
-# Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false "$CLEAN_VENDOR"
-
-extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
-extract "$MY_DIR"/proprietary-files-qc-perf.txt "$SRC" "$SECTION"
-extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
-
-"$MY_DIR"/setup-makefiles.sh
+./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
