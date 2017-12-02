@@ -1,15 +1,14 @@
+# Camera
+ro.total.camera.number=3
+ro.config.devicename=nubia smart phone
+persist.sys.exif.model=nubia Z17
+
+# Device name
+persist.sys.devicename=nubia Z17
+persist.sys.modelnumber=NX563J
+
 # Display
 ro.sf.lcd_density=480
 
-# Hardkeys
-qemu.hw.mainkeys=1
-
-# Camera
-#device name for camera picture
-ro.config.devicename=nubia smart phone
-#camera extern mode exif when product this should be deleted.
-persist.sys.exif.model=nubia Z17
-
-#ZTEMT add for get total camera number
-ro.total.camera.number=3
-#ZTEMT add for focus
+# Enable navigation bar
+qemu.hw.mainkeys=0
