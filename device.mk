@@ -46,4 +46,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/input_proxy.idc:system/usr/idc/input_proxy.idc
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:system/usr/keylayout/nubia_synaptics_dsx.kl
+
 $(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)
