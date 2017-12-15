@@ -23,11 +23,8 @@ DEVICE_PATH := device/nubia/nx563j
 TARGET_OTA_ASSERT_DEVICE := NX563J
 
 # CM Hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
     $(DEVICE_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/data/tp/easy_wakeup_gesture"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nubia/msm8998
