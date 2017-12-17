@@ -39,7 +39,6 @@ lib64/libTAS2555ftc.so
 etc/firmware/tas2555_uCDSP.bin
 
 # Camera
-bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 
 etc/camera/camera_config.xml
@@ -54,6 +53,23 @@ lib/libqomx_core.so
 lib/hw/camera.msm8998.so
 
 # Nubia effects
+lib/libnubia_runtime.so
+lib/libnubia_servers.so
+lib/libnubia_trajectory.so
+lib/libbuffer_manager.so
+lib/libBuffer.so
+
+lib64/libnubia_runtime.so
+lib64/libnubia_servers.so
+lib64/libnubia_trajectory.so
+lib64/libnubia_media_player.so
+lib64/libavcodec.so
+lib64/libavfilter.so
+lib64/libavformat.so
+lib64/libavutil.so
+lib64/libbuffer_manager.so
+lib64/libBuffer.so
+
 lib/libAlgorithm.so
 lib/libalRnBLV.so
 lib/libalRnB.so
@@ -86,6 +102,7 @@ lib/libmulti_exposure.so
 lib/libmpbase.so
 lib/libnubia_clone.so
 lib/libnubia_effect.so
+lib/libNubiaImageAlgorithmBSP.so
 lib/libNubiaImageAlgorithm.so
 lib/libNubiaxmptoolkit.so
 lib/libnubiajpeg.so
@@ -116,6 +133,7 @@ lib64/libnubia_clone.so
 lib64/libnubia_effect.so
 lib64/libnubia_delay_recorder.so
 lib64/libnubia_gallery_player.so
+lib64/libNubiaImageAlgorithmBSP.so
 lib64/libNubiaImageAlgorithm.so
 lib64/libNubiaxmptoolkit.so
 lib64/libnubiajpeg.so
@@ -567,8 +585,10 @@ vendor/firmware/BCM20797B0_002.001.043.2565.0005_Generic_NCD_Unsigned_configdata
 etc/firmware/nubia_tp_jdi_fw.img
 
 # Misc
+etc/firmware/main_alOtp.bin
 etc/firmware/miniBoot.bin
 etc/firmware/SCTable.asb
+etc/firmware/sub_alOtp.bin
 etc/firmware/TBM_D2.bin
 vendor/firmware/Generic_unsigned.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
