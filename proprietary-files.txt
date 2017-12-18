@@ -1,3 +1,8 @@
+# Alipay
+#bin/ifaadaemon
+lib/libteeclientjni.so
+lib64/libteeclientjni.so
+
 # Audio Dolby
 vendor/etc/dolby/dax-default.xml
 #vendor/lib/libhwdaphal.so
@@ -53,12 +58,14 @@ lib/libqomx_core.so
 lib/hw/camera.msm8998.so
 
 # Nubia effects
+lib/libnubiaconfig.so
 lib/libnubia_runtime.so
 lib/libnubia_servers.so
 lib/libnubia_trajectory.so
 lib/libbuffer_manager.so
 lib/libBuffer.so
 
+lib64/libnubiaconfig.so
 lib64/libnubia_runtime.so
 lib64/libnubia_servers.so
 lib64/libnubia_trajectory.so
@@ -103,6 +110,7 @@ lib/libmpbase.so
 lib/libnubia_clone.so
 lib/libnubia_effect.so
 lib/libNubiaImageAlgorithmBSP.so
+lib/libNubiaImageAlgorithmPhotoEditor.so
 lib/libNubiaImageAlgorithm.so
 lib/libNubiaxmptoolkit.so
 lib/libnubiajpeg.so
@@ -118,6 +126,7 @@ lib/libPrettyWaterMark.so
 lib/libBigAperture.so
 
 lib64/libAlgorithm.so
+lib64/libAltek_Alignment.so
 lib64/libalRnB.so
 lib64/libalSDE2.so
 lib64/libbuffer_manager.so
@@ -147,6 +156,8 @@ lib64/libarcsoft_dualcam_refocus.so
 lib64/libPrettyWaterMark.so
 lib64/libBigAperture.so
 
+lib64/libDualCamera_Calibration.so
+
 vendor/lib/libIQ_Match_Lib.so
 vendor/lib/libalCMotion.so
 vendor/lib/libAltek_AF.so
@@ -175,6 +186,7 @@ vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libseemore.so
 vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
+vendor/lib/libUBWC.so
 
 vendor/lib64/libChamomilePA.so
 vendor/lib64/libblurbuster.so
@@ -186,6 +198,7 @@ vendor/lib64/libts_detected_face_hal.so
 vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libseemore.so
 vendor/lib64/libubifocus.so
+vendor/lib64/libUBWC.so
 
 vendor/lib/libedge_smooth_hvx_stub.so
 vendor/lib/libflash_pmic.so
@@ -194,6 +207,11 @@ vendor/lib/libremosaic_daemon.so
 vendor/lib/libvideobokeh.so
 
 vendor/lib64/libvideobokeh.so
+
+vendor/lib/libts_detected_face_jni.so
+vendor/lib/libts_face_beautify_jni.so
+vendor/lib64/libts_detected_face_jni.so
+vendor/lib64/libts_face_beautify_jni.so
 
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_csidtg.so
@@ -263,6 +281,11 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
+vendor/lib64/libmmcamera_dbg.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_tintless_algo.so
+vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 vendor/lib/libmmcamera2_altek_tube.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -557,6 +580,8 @@ lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so
 lib/lib_fpc_tac_shared.so
 lib64/lib_fpc_tac_shared.so
+lib64/libfpc_fingerprints_service_ex.so
+
 
 # Graphics firmware
 etc/firmware/leia_pfp_470.fw
