@@ -368,12 +368,6 @@ on charger
     start hvdcp_opti
 # NUBIA END
 
-#start camera server as daemon
-service qcamerasvr /system/bin/mm-qcamera-daemon
-    class late_start
-    user camera
-    group camera system inet input graphics
-
 ## import cne init file
 
 # NUBIA START
