@@ -27,8 +27,10 @@ BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/cmhw
 
 # Kernel
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/nubia/msm8998
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
