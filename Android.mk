@@ -29,4 +29,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),nx563j)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+# Create Symbolic link
+$(shell mkdir -p $(TARGET_OUT)/lib/modules; \
+        ln -sf /system/lib/modules/qca_cld3/qca_cld3_wlan.ko $(TARGET_OUT)/lib/modules/wlan.ko)
 endif

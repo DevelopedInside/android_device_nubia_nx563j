@@ -71,5 +71,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lib/modules/texfat.ko:system/lib/modules/texfat.ko \
     $(LOCAL_PATH)/prebuilt/lib/modules/tspp.ko:system/lib/modules/tspp.ko \
     $(LOCAL_PATH)/prebuilt/lib/modules/ufs_test.ko:system/lib/modules/ufs_test.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/wil6210.ko:system/lib/modules/wil6210.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/wlan.ko:system/lib/modules/wlan.ko
+    $(LOCAL_PATH)/prebuilt/lib/modules/wil6210.ko:system/lib/modules/wil6210.ko
