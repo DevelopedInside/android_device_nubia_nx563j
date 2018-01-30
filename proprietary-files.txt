@@ -44,13 +44,10 @@ etc/firmware/tas2555_uCDSP.bin
 
 # Camera
 bin/mm-qcamera-daemon
-
 etc/camera/camera_config.xml
-
 etc/camera/imx318_chromatix.xml
 etc/camera/imx362_chromatix.xml
 etc/camera/s5k3p3_chromatix.xml
-
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
@@ -102,9 +99,7 @@ lib/libBurstProcessJni.so
 lib/libdngcreator.so
 lib/libhistutil.so
 lib/libIndependenceUtil.so
-lib/libmmcamera_interface.so
 lib/libmmcamera_nubiacustpro.so
-lib/libmmjpeg_interface.so
 lib/libmorpho_panorama_gp.so
 lib/libmulti_exposure.so
 lib/libmpbase.so
