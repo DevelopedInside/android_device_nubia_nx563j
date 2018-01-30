@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 # Temp files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
-    $(LOCAL_PATH)/prebuilt/lib/hw64/vibrator.default.so:system/lib/hw64/vibrator.default.so \
+    $(LOCAL_PATH)/prebuilt/lib64/hw/vibrator.default.so:system/lib64/hw/vibrator.default.so \
     $(LOCAL_PATH)/prebuilt/lib/modules/qca_cld3/qca_cld3_wlan.ko:system/lib/modules/qca_cld3/qca_cld3_wlan.ko \
     $(LOCAL_PATH)/prebuilt/lib/modules/br_netfilter.ko:system/lib/modules/br_netfilter.ko \
     $(LOCAL_PATH)/prebuilt/lib/modules/mpq-adapter.ko:system/lib/modules/mpq-adapter.ko \
