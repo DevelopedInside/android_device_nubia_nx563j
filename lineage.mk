@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from cheeseburger device
+# Inherit from nx563j device
 $(call inherit-product, device/nubia/nx563j/device.mk)
 
 # Inherit some common CM stuff.
