@@ -56,19 +56,3 @@ PRODUCT_COPY_FILES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:system/usr/keylayout/nubia_synaptics_dsx.kl
-
-# Temp files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
-    $(LOCAL_PATH)/prebuilt/lib64/hw/vibrator.default.so:system/lib64/hw/vibrator.default.so \
-    $(LOCAL_PATH)/prebuilt/lib/modules/qca_cld3/qca_cld3_wlan.ko:system/lib/modules/qca_cld3/qca_cld3_wlan.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/br_netfilter.ko:system/lib/modules/br_netfilter.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/mpq-adapter.ko:system/lib/modules/mpq-adapter.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/mpq-dmx-hw-plugin.ko:system/lib/modules/mpq-dmx-hw-plugin.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/multi_channel_hook.ko:system/lib/modules/multi_channel_hook.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/rdbg.ko:system/lib/modules/rdbg.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/texfat.ko:system/lib/modules/texfat.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/tspp.ko:system/lib/modules/tspp.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/ufs_test.ko:system/lib/modules/ufs_test.ko \
-    $(LOCAL_PATH)/prebuilt/lib/modules/wil6210.ko:system/lib/modules/wil6210.ko
