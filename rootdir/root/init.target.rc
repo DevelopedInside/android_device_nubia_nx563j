@@ -133,6 +133,9 @@ on boot
    insmod /system/lib/modules/msm-vidc-dyn-gov.ko
    insmod /system/lib/modules/msm-vidc-table-gov.ko
    # NUBIA END
+   
+   # Vibrator intensity
+   chown system system /sys/devices/virtual/timed_output/vibrator/vmax_mv
 
 # NUBIA START 
 #fingerprint service

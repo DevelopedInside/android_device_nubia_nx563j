@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -53,5 +56,3 @@ PRODUCT_COPY_FILES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:system/usr/keylayout/nubia_synaptics_dsx.kl
-
-$(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)

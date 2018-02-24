@@ -2,6 +2,7 @@
 #bin/ifaadaemon
 lib/libteeclientjni.so
 lib64/libteeclientjni.so
+framework/ifaa_fingerprint.jar
 
 # Audio Dolby
 vendor/etc/dolby/dax-default.xml
@@ -43,13 +44,10 @@ etc/firmware/tas2555_uCDSP.bin
 
 # Camera
 bin/mm-qcamera-daemon
-
 etc/camera/camera_config.xml
-
 etc/camera/imx318_chromatix.xml
 etc/camera/imx362_chromatix.xml
 etc/camera/s5k3p3_chromatix.xml
-
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
@@ -101,9 +99,7 @@ lib/libBurstProcessJni.so
 lib/libdngcreator.so
 lib/libhistutil.so
 lib/libIndependenceUtil.so
-lib/libmmcamera_interface.so
 lib/libmmcamera_nubiacustpro.so
-lib/libmmjpeg_interface.so
 lib/libmorpho_panorama_gp.so
 lib/libmulti_exposure.so
 lib/libmpbase.so
@@ -622,6 +618,10 @@ lib64/lib_fpc_tac_shared.so
 lib64/libfpc_fingerprints_service_ex.so
 
 # NFC firmware
+etc/libnfc-brcm-20797b00.conf
+etc/libnfc-brcm.conf
+etc/nfcee_access.xml
+lib64/hw/nfc_nci.bcm2079x.default.so
 vendor/firmware/Generic_unsigned_706.ncd
 vendor/firmware/BCM20797A1_001.002.015.2562.0011_Generic_I2C_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0007_I2C_configdata.ncd
@@ -651,3 +651,18 @@ vendor/firmware/Generic_unsigned_822_2.ncd
 vendor/firmware/Generic_unsigned_918_1.ncd
 vendor/firmware/Generic_unsigned_fix_p2p_stuck.ncd
 vendor/firmware/Generic_unsigned_SY.ncd
+
+# temporary Nubia OSS files
+lib/hw/vibrator.default.so
+lib/hw64/vibrator.default.so
+lib/modules/qca_cld3/qca_cld3_wlan.ko:lib/modules/wlan.ko
+lib/modules/br_netfilter.ko
+lib/modules/mpq-adapter.ko
+lib/modules/mpq-dmx-hw-plugin.ko
+lib/modules/multi_channel_hook.ko
+lib/modules/rdbg.ko
+lib/modules/test-iosched.ko
+lib/modules/texfat.ko
+lib/modules/tspp.ko
+lib/modules/ufs_test.ko
+lib/modules/wil6210.ko
