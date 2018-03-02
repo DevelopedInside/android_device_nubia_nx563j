@@ -2557,10 +2557,10 @@
         <ctl name="AIF1_CAP Mixer SLIM TX5" value="1" />
         <ctl name="SLIM TX7 MUX" value="DEC7" />
         <ctl name="ADC MUX7" value="AMIC" />
-        <ctl name="AMIC MUX7" value="ADC5" />
+        <ctl name="AMIC MUX7" value="ADC6" />
         <ctl name="SLIM TX5 MUX" value="DEC5" />
         <ctl name="ADC MUX5" value="AMIC" />
-        <ctl name="AMIC MUX5" value="ADC6" />
+        <ctl name="AMIC MUX5" value="ADC5" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
     </path>
 
