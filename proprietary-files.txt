@@ -654,7 +654,7 @@ vendor/firmware/Generic_unsigned_SY.ncd
 
 # temporary Nubia OSS files
 lib/hw/vibrator.default.so
-lib/hw64/vibrator.default.so
+lib64/hw/vibrator.default.so
 lib/modules/qca_cld3/qca_cld3_wlan.ko:lib/modules/wlan.ko
 lib/modules/br_netfilter.ko
 lib/modules/mpq-adapter.ko
