@@ -4,11 +4,6 @@ lib/libteeclientjni.so
 lib64/libteeclientjni.so
 framework/ifaa_fingerprint.jar
 
-# Audio Dolby
-vendor/etc/dolby/dax-default.xml
-vendor/lib/soundfx/libhwdap.so
-vendor/lib/soundfx/libswdap.so
-
 # Audio ACDB
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -35,12 +30,6 @@ etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Hdmi_cal.acdb
 etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Headset_cal.acdb
 etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Speaker_cal.acdb
 etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_workspaceFile.qwsp
-
-# Audio amplifer TAS2555
-bin/tas2555-ftc
-lib/libTAS2555ftc.so
-lib64/libTAS2555ftc.so
-etc/firmware/tas2555_uCDSP.bin
 
 # Camera
 bin/mm-qcamera-daemon
