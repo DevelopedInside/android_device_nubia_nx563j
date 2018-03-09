@@ -14,12 +14,7 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit from nx563j device
-$(call inherit-product, device/nubia/nx563j/device.mk)
+$(call inherit-product, device/nubia/nx563j/full_nx563j.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -27,17 +22,17 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_nx563j
 PRODUCT_DEVICE := nx563j
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_BRAND := nubia
 PRODUCT_MODEL := NX563J
 
 PRODUCT_GMS_CLIENTID_BASE := android-zte
 
+PRODUCT_BRAND := nubia
+TARGET_VENDOR := nubia
 TARGET_VENDOR_PRODUCT_NAME := NX563J
 TARGET_VENDOR_DEVICE_NAME := NX563J
 
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=NX563J PRODUCT_NAME=NX563J
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=nubia/NX563J/NX563J:7.1.1/NMF26X/eng.nubia.20170913.160438:user/release-keys
-
-TARGET_VENDOR := nubia
+    BUILD_FINGERPRINT=nubia/NX563J/NX563J:7.1.1/NMF26X/eng.nubia.20170913.160438:user/release-keys \
+    PRIVATE_BUILD_DESC="NX563J-user 7.1.1 NMF26X eng.nubia.20171128.144020 release-keys"
