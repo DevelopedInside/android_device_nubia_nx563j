@@ -66,7 +66,7 @@ $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(BOOT_S
 	@echo -e ${CL_CYN}"Made boot image: $@"${CL_RST}
 
 ## Overload recoveryimg generation: Same as the original, using prebuilt kernel with BootSignature
-$(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
+$(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(BOOT_SIGNER) \
 		$(recovery_ramdisk) \
 		$(recovery_kernel)
 		$(call build-recoveryimage-target, $@)

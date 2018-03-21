@@ -22,18 +22,39 @@ DEVICE_PATH := device/nubia/nx563j
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
 
+# Use prebuilt kernel
+TARGET_USE_PREBUILT_KERNEL := false
+
 # CM Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/cmhw
 
+ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
+BOARD_HARDWARE_CLASS += \
+    $(DEVICE_PATH)/prebuilt/cmhw
+endif
+
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/nubia/msm8998
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
+DTS_NAME += \
+    msm8998-v2.1-mtp-NX563J.dtb \
+    msm8998-v2-mtp-NX563J.dtb \
+    msm8998-mtp-NX563J.dtb
+ZTEMT_DTS_NAME:=$(DTS_NAME)
+export ZTEMT_DTS_NAME
+
+ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/prebuilt/mkbootimg.mk
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+endif
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
+
+ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
+-include vendor/nubia/nx563j-prebuilt/BoardConfigVendor.mk
+endif
