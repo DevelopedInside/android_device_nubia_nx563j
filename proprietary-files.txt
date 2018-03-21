@@ -552,6 +552,10 @@ vendor/firmware/BCM20797B0_002.001.043.2565.0005_Generic_NCD_Unsigned_configdata
 # TP firmware
 etc/firmware/nubia_tp_jdi_fw.img
 
+# Vibrator
+lib/hw/vibrator.default.so
+lib64/hw/vibrator.default.so
+
 # Misc
 lib/libbreathlighthal.so
 lib64/libbreathlighthal.so
@@ -571,18 +575,3 @@ vendor/firmware/Generic_unsigned_822_2.ncd
 vendor/firmware/Generic_unsigned_918_1.ncd
 vendor/firmware/Generic_unsigned_fix_p2p_stuck.ncd
 vendor/firmware/Generic_unsigned_SY.ncd
-
-# temporary Nubia OSS files
-lib/hw/vibrator.default.so
-lib64/hw/vibrator.default.so
-lib/modules/qca_cld3/qca_cld3_wlan.ko:lib/modules/wlan.ko
-lib/modules/br_netfilter.ko
-lib/modules/mpq-adapter.ko
-lib/modules/mpq-dmx-hw-plugin.ko
-lib/modules/multi_channel_hook.ko
-lib/modules/rdbg.ko
-lib/modules/test-iosched.ko
-lib/modules/texfat.ko
-lib/modules/tspp.ko
-lib/modules/ufs_test.ko
-lib/modules/wil6210.ko
