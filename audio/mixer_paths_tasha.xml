@@ -2192,7 +2192,7 @@
     </path>
 
     <path name="handset-mic">
-        <path name="adc6" />
+        <path name="adc5" />
     </path>
 
     <path name="handset-mic-db">
