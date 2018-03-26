@@ -22,9 +22,6 @@ DEVICE_PATH := device/nubia/nx563j
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
 
-# Use prebuilt kernel
-TARGET_USE_PREBUILT_KERNEL := false
-
 # CM Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/cmhw
