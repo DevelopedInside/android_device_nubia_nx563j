@@ -48,9 +48,6 @@ lib/hw/camera.msm8998.so
 lib/libnubiaconfig.so
 lib/libnubia_runtime.so
 lib/libnubia_servers.so
-lib/libnubia_trajectory.so
-lib/libbuffer_manager.so
-lib/libBuffer.so
 
 lib64/libnubiaconfig.so
 lib64/libnubia_runtime.so
@@ -64,7 +61,6 @@ lib64/libavutil.so
 lib64/libbuffer_manager.so
 lib64/libBuffer.so
 
-lib/libAlgorithm.so
 lib/libalRnBLV.so
 lib/libalRnB.so
 lib/libalSDE2.so
@@ -82,41 +78,20 @@ lib64/libarcsoft_beautyshot.so
 lib64/libarcsoft_dualcam_refocus.so
 lib64/libarcsoft_beautyshot_video_algorithm.so
 lib64/libarcsoft_night_shot.so
-lib/libbuffer_manager.so
-lib/libBuffer.so
-lib/libBurstProcessJni.so
-lib/libdngcreator.so
-lib/libhistutil.so
-lib/libIndependenceUtil.so
 lib/libmmcamera_nubiacustpro.so
-lib/libmorpho_panorama_gp.so
-lib/libmulti_exposure.so
 lib/libmpbase.so
-lib/libnubia_clone.so
 lib/libnubia_effect.so
-lib/libNubiaImageAlgorithmBSP.so
-lib/libNubiaImageAlgorithmPhotoEditor.so
 lib/libNubiaImageAlgorithm.so
-lib/libNubiaxmptoolkit.so
-lib/libnubiajpeg.so
-lib/libnubia_trajectory.so
-lib/libNubiaxmptoolkit.so
-lib/libpanoramahelper.so
-lib/libproductinfo.so
 lib/libalParseOTP.so
 lib/libalSPE.so
-lib/libArcsoftAlgorithm.so
 lib/libarcsoft_dualcam_refocus.so
 lib/libPrettyWaterMark.so
-lib/libBigAperture.so
 
 lib64/libAlgorithm.so
 lib64/libAltek_Alignment.so
 lib64/libalRnB.so
 lib64/libalSDE2.so
-lib64/libbuffer_manager.so
 lib64/libBuffer.so
-lib64/libBurstProcessJni.so
 lib64/libhistutil.so
 lib64/libIndependenceUtil.so
 lib64/libdngcreator.so
@@ -127,11 +102,8 @@ lib64/libnubia_clone.so
 lib64/libnubia_effect.so
 lib64/libnubia_delay_recorder.so
 lib64/libnubia_gallery_player.so
-lib64/libNubiaImageAlgorithmBSP.so
 lib64/libNubiaImageAlgorithm.so
-lib64/libNubiaxmptoolkit.so
 lib64/libnubiajpeg.so
-lib64/libnubia_trajectory.so
 lib64/libpanoramahelper.so
 lib64/libproductinfo.so
 lib64/libalParseOTP.so
