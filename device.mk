@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/speaker.ftcfg:system/etc/speaker.ftcfg
 
 # Bootanimation
-TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
