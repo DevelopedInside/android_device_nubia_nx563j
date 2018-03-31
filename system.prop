@@ -9,6 +9,3 @@ persist.sys.modelnumber=NX563J
 
 # Display
 ro.sf.lcd_density=480
-
-# Disable navigation bar
-qemu.hw.mainkeys=1
