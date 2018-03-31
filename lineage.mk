@@ -20,7 +20,7 @@ $(call inherit-product, device/nubia/nx563j/full_nx563j.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Use prebuilt kernel
-TARGET_USE_PREBUILT_KERNEL := true
+TARGET_USE_PREBUILT_KERNEL := false
 
 PRODUCT_NAME := lineage_nx563j
 PRODUCT_DEVICE := nx563j
