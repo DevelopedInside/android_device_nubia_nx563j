@@ -30,5 +30,4 @@ key 172   HOME        VIRTUAL
 key 139   APP_SWITCH  VIRTUAL
 
 # PALM_LOCK
-key 752   SLEEP       VIRTUAL
-key 68    WAKEUP
+key 143    WAKEUP
