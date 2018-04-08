@@ -31,7 +31,7 @@ import java.io.File;
 
 public class KeyDisabler {
 
-    private static String CONTROL_PATH = "/data/tp/keypad_enable";
+    private static String CONTROL_PATH = "/sys/class/tpnode/tpnode/synaptics/0dbutton";
 
     public static boolean isSupported() {
         return FileUtils.isFileWritable(CONTROL_PATH);
@@ -42,7 +42,7 @@ public class KeyDisabler {
     }
 
     public static boolean setActive(boolean state) {
-        return FileUtils.writeLine(CONTROL_PATH, (state ? "0" : "1"));
+        return FileUtils.writeLine(CONTROL_PATH, state ? "0" : "1");
     }
 
 }
