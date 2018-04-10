@@ -2132,7 +2132,7 @@
     </path>
 
     <path name="speaker-mic">
-        <path name="adc5" />
+        <path name="adc6" />
     </path>
 
     <path name="speaker-mic-liquid">
