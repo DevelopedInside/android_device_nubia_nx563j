@@ -1,11 +1,18 @@
+#
+# system.prop for nx563j
+#
+
+# Cabl
+ro.qualcomm.cabl=0
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/system/etc/calib.cfg
+ro.qcom.ad.sensortype=2
+
 # Camera
 ro.total.camera.number=3
-ro.config.devicename=nubia smart phone
-persist.sys.exif.model=nubia Z17
 
-# Device name
-persist.sys.devicename=nubia Z17
-persist.sys.modelnumber=NX563J
+# Charger
+persist.sys.standard_charger=USB_HVDCP_3
 
 # Display
 ro.sf.lcd_density=480
