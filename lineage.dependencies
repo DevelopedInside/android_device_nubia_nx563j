@@ -1,14 +1,6 @@
 [
   {
-    "repository": "android_device_qcom_common",
-    "target_path": "device/qcom/common"
-  },
-  {
     "repository": "android_device_nubia_msm8998-common",
     "target_path": "device/nubia/msm8998-common"
-  },
-  {
-    "repository": "android_kernel_nubia_msm8998",
-    "target_path": "kernel/nubia/msm8998"
   }
 ]
