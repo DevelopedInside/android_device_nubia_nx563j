@@ -27,11 +27,6 @@ TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/cmhw
 
-ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/prebuilt/cmhw
-endif
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
 DTS_NAME += \
@@ -41,17 +36,8 @@ DTS_NAME += \
 ZTEMT_DTS_NAME:=$(DTS_NAME)
 export ZTEMT_DTS_NAME
 
-ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/prebuilt/mkbootimg.mk
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
-endif
-
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
-
-ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
--include vendor/nubia/nx563j-prebuilt/BoardConfigVendor.mk
-endif

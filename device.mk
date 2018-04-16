@@ -17,11 +17,6 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)
 
-ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
-# Get prebuilt specific modules
-$(call inherit-product, vendor/nubia/nx563j-prebuilt/nx563j-prebuilt-vendor.mk)
-endif
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
