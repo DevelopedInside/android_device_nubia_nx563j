@@ -52,10 +52,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
 
-# Init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/input_proxy.idc:system/usr/idc/input_proxy.idc
