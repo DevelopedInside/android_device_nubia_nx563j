@@ -26,7 +26,6 @@ TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
 # CM Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/sys/class/tpnode/tpnode/synaptics/wake_gesture"
 
 ifeq ($(TARGET_USE_PREBUILT_KERNEL),true)
 BOARD_HARDWARE_CLASS += \
