@@ -201,16 +201,11 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
 
-        <!-- Handset -->
-        <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_HANDSET" backend="handset"/>
-        <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="handset"/>
-
         <!-- Speaker -->
         <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="speaker" interface="PRI_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="voice-speaker-2"/>
     </backend_names>
 </audio_platform_info>
 
