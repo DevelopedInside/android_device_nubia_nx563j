@@ -510,7 +510,6 @@ lib64/libfpc_fingerprints_service_ex.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf
-etc/libnfc-brcm.conf
 etc/nfcee_access.xml
 lib64/hw/nfc_nci.bcm2079x.default.so
 vendor/firmware/Generic_unsigned_706.ncd
