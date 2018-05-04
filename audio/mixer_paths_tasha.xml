@@ -1392,7 +1392,7 @@
 
     <path name="compress-offload-playback7 speaker-and-usb-headphones">
         <path name="compress-offload-playback7 usb-headphones" />
-        <path name="compress-offload-playback7" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback7 headphones">
@@ -1789,6 +1789,7 @@
 
     <path name="compress-voip-call speaker">
         <ctl name="Configuration" value="1" />
+        <ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" />
         <ctl name="PRI_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
@@ -1898,6 +1899,7 @@
 
     <path name="voicemmode1-call speaker">
         <ctl name="Configuration" value="1" />
+        <ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" />
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
@@ -1947,12 +1949,12 @@
 
     <path name="voicemmode1-call voice-speaker-vbat">
         <path name="echo-reference speaker-vbat-mono" />
-        <path name="voicemmode1-call"/>
+        <path name="voicemmode1-call speaker"/>
     </path>
 
     <path name="voicemmode1-call voice-speaker-2-vbat">
         <path name="echo-reference speaker-vbat-mono-2" />
-        <path name="voicemmode1-call"/>
+        <path name="voicemmode1-call speaker"/>
     </path>
 
     <path name="voicemmode2-call">
@@ -1962,6 +1964,7 @@
 
     <path name="voicemmode2-call speaker">
         <ctl name="Configuration" value="1" />
+        <ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" />
         <ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
@@ -2011,12 +2014,12 @@
 
     <path name="voicemmode2-call voice-speaker-vbat">
         <path name="echo-reference speaker-vbat-mono" />
-        <path name="voicemmode2-call"/>
+        <path name="voicemmode2-call speaker"/>
     </path>
 
     <path name="voicemmode2-call voice-speaker-2-vbat">
         <path name="echo-reference speaker-vbat-mono-2" />
-        <path name="voicemmode2-call"/>
+        <path name="voicemmode2-call speaker"/>
     </path>
 
     <path name="listen-voice-wakeup-1">
@@ -2975,7 +2978,7 @@
 
     <path name="deep-buffer-playback speaker-and-bt-a2dp">
         <path name="deep-buffer-playback bt-a2dp" />
-        <path name="deep-buffer-playback" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="compress-offload-playback speaker-and-bt-a2dp">
@@ -3033,4 +3036,3 @@
         <path name="audio-ull-playback speaker" />
     </path>
 </mixer>
-
