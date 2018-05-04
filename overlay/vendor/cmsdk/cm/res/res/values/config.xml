@@ -28,7 +28,7 @@
 
          For example, a device support pulsating, RGB notification and
          battery LEDs would set this config to 11. -->
-    <integer name="config_deviceLightCapabilities">8</integer>
+    <integer name="config_deviceLightCapabilities">40</integer>
 
     <!-- Display mode remapping table.
          If the mode names returned by the backend do not match
