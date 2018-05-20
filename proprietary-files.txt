@@ -1,8 +1,3 @@
-# Alipay
-lib/libteeclientjni.so
-lib64/libteeclientjni.so
-framework/ifaa_fingerprint.jar
-
 # Audio ACDB
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -12,36 +7,19 @@ etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Bluetooth_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_General_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Global_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Handset_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Hdmi_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Headset_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_Speaker_cal.acdb
-etc/acdbdata/QRD/msm8998-qvr-tavil-snd-card/QRD_QVR_WCD9340_workspaceFile.qwsp
-
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Bluetooth_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_General_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Global_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Handset_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Hdmi_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Headset_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_Speaker_cal.acdb
-etc/acdbdata/QRD/msm8998-skuk-tavil-snd-card/QRD_SKUK_WCD9340_workspaceFile.qwsp
-
 # Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin
 
-# Camera
-bin/mm-qcamera-daemon
+# CameraHAL
+lib/hw/camera.msm8998.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmmlib2d_interface.so
 lib/libqomx_core.so
-lib/hw/camera.msm8998.so
 
+# Camera
+bin/mm-qcamera-daemon
 lib/libarcsoft_beautyshot.so
 lib/libarcsoft_beautyshot_image_algorithm.so
 lib/libarcsoft_beautyshot_video_algorithm.so
@@ -196,7 +174,6 @@ lib64/libavformat.so
 lib64/libavutil.so
 lib64/libBigAperture.so
 lib64/libBuffer.so
-lib64/libBuffer.so
 lib64/libbuffer_manager.so
 lib64/libdngcreator.so
 lib64/libhistutil.so
@@ -261,6 +238,10 @@ etc/camera/imx362_chromatix.xml
 etc/camera/s5k3p3_chromatix.xml
 
 # Camera chromatix
+vendor/lib/libchromatix_csidtg_common.so
+vendor/lib/libchromatix_csidtg_cpp_preview.so
+vendor/lib/libchromatix_csidtg_postproc.so
+vendor/lib/libchromatix_csidtg_preview.so
 vendor/lib/libchromatix_imx318_1080p_preview_3a.so
 vendor/lib/libchromatix_imx318_1080p_video_3a.so
 vendor/lib/libchromatix_imx318_4k_preview_3a.so
@@ -441,6 +422,11 @@ etc/firmware/cpp_firmware_v1_5_2.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 
+# Camera nubia firmware
+etc/firmware/miniBoot.bin
+etc/firmware/TBM_D2.bin
+etc/firmware/SCTable.asb
+
 # Camera sensors
 vendor/lib/libmmcamera_imx318.so
 vendor/lib/libmmcamera_imx318_arcsoft.so
@@ -541,10 +527,7 @@ lib/libbreathlighthal.so
 lib64/libbreathlighthal.so
 
 etc/firmware/main_alOtp.bin
-etc/firmware/miniBoot.bin
-etc/firmware/SCTable.asb
 etc/firmware/sub_alOtp.bin
-etc/firmware/TBM_D2.bin
 
 vendor/firmware/Generic_unsigned.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
