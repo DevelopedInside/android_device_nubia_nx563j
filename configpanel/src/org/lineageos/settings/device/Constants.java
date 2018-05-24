@@ -28,16 +28,13 @@ public class Constants {
     public static final String BUTTON_SWAP_KEY = "button_swap";
 
     // Nodes
-    public static final String TOUCHPANEL_BUTTON_SWAP_NODE = "/sys/class/input/input4/reversed_keys";
+    public static final String BUTTON_SWAP_PATH = "/sys/class/input/input4/reversed_keys";
 
     // Holds <preference_key> -> <proc_node> mapping
-    public static final Map<String, String> sBooleanNodePreferenceMap = new HashMap<>();
-
-    // Holds <preference_key> -> <default_values> mapping
-    public static final Map<String, Object> sNodeDefaultMap = new HashMap<>();
+    public static final Map<String, SwitchPreferenceBackend> sBackendsMap = new HashMap<>();
 
     static {
-        sBooleanNodePreferenceMap.put(BUTTON_SWAP_KEY, TOUCHPANEL_BUTTON_SWAP_NODE);
-        sNodeDefaultMap.put(BUTTON_SWAP_KEY, false);
+        sBackendsMap.put(BUTTON_SWAP_KEY,
+                new SwitchPreferenceFilesBackend(BUTTON_SWAP_PATH, false));
     }
 }
