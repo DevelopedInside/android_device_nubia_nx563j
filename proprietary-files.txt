@@ -50,7 +50,6 @@ vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera_edgesmooth_lib.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
@@ -168,10 +167,7 @@ lib64/libalRnB.so
 lib64/libalSDE2.so
 lib64/libalSPE.so
 lib64/libAltek_Alignment.so
-lib64/libavcodec.so
 lib64/libavfilter.so
-lib64/libavformat.so
-lib64/libavutil.so
 lib64/libBigAperture.so
 lib64/libBuffer.so
 lib64/libbuffer_manager.so
@@ -242,6 +238,7 @@ vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
 vendor/lib/libchromatix_csidtg_preview.so
+vendor/lib/libchromatix_csidtg_zsl_preview.so
 vendor/lib/libchromatix_imx318_1080p_preview_3a.so
 vendor/lib/libchromatix_imx318_1080p_video_3a.so
 vendor/lib/libchromatix_imx318_4k_preview_3a.so
@@ -523,9 +520,6 @@ lib/hw/vibrator.default.so
 lib64/hw/vibrator.default.so
 
 # Misc
-lib/libbreathlighthal.so
-lib64/libbreathlighthal.so
-
 etc/firmware/main_alOtp.bin
 etc/firmware/sub_alOtp.bin
 
