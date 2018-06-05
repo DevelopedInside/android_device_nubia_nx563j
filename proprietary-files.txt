@@ -40,7 +40,6 @@ lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so
 
 vendor/lib/libblurbuster.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
@@ -65,10 +64,8 @@ vendor/lib/libts_detected_face_jni.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libts_face_beautify_jni.so
 vendor/lib/libubifocus.so
-vendor/lib/libUBWC.so
 vendor/lib/libvideobokeh.so
 vendor/lib64/libblurbuster.so
-vendor/lib64/libcdsprpc.so
 vendor/lib64/libChamomilePA.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
@@ -79,7 +76,6 @@ vendor/lib64/libts_detected_face_jni.so
 -vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libts_face_beautify_jni.so
 vendor/lib64/libubifocus.so
-vendor/lib64/libUBWC.so
 vendor/lib64/libvideobokeh.so
 
 vendor/lib/libmmcamera_bokeh.so
@@ -147,48 +143,44 @@ vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera2_stats_lib.so
 
 # Camera Nubia
-lib/libalDU_Utility.so
-lib/libalParseOTP.so
 lib/libalRnB.so
 lib/libalRnBLV.so
 lib/libalSDE2.so
 lib/libalSDK.so
+lib/libalDU_Utility.so
+lib/libalRnBLV.so
+lib/libalParseOTP.so
 lib/libalSPE.so
+lib/libarcsoft_dualcam_refocus.so
+lib/libPrettyWaterMark.so
 lib/libmmcamera_nubiacustpro.so
 lib/libnubia_effect.so
-lib/libnubia_runtime.so
-lib/libnubia_servers.so
-lib/libnubiaconfig.so
 lib/libNubiaImageAlgorithm.so
-lib/libPrettyWaterMark.so
 lib64/libAlgorithm.so
-lib64/libalParseOTP.so
 lib64/libalRnB.so
 lib64/libalSDE2.so
+lib64/libalParseOTP.so
 lib64/libalSPE.so
-lib64/libAltek_Alignment.so
-lib64/libavfilter.so
+lib64/libArcsoftAlgorithm.so
+lib64/libarcsoft_dualcam_refocus.so
+lib64/libPrettyWaterMark.so
 lib64/libBigAperture.so
-lib64/libBuffer.so
 lib64/libbuffer_manager.so
-lib64/libdngcreator.so
+lib64/libBuffer.so
 lib64/libhistutil.so
 lib64/libIndependenceUtil.so
+lib64/libdngcreator.so
 lib64/libmorpho_panorama_gp.so
 lib64/libmulti_exposure.so
 lib64/libnubia_clone.so
-lib64/libnubia_delay_recorder.so
 lib64/libnubia_effect.so
+lib64/libnubia_delay_recorder.so
+lib64/libavfilter.so
 lib64/libnubia_gallery_player.so
-lib64/libnubia_media_player.so
-lib64/libnubia_runtime.so
-lib64/libnubia_servers.so
-lib64/libnubia_trajectory.so
-lib64/libnubiaconfig.so
-lib64/libNubiaImageAlgorithm.so
 lib64/libnubiajpeg.so
+lib64/libnubia_trajectory.so
+lib64/libNubiaImageAlgorithm.so
 lib64/libpanoramahelper.so
-lib64/libPrettyWaterMark.so
 lib64/libproductinfo.so
 vendor/lib/libalCMotion.so
 vendor/lib/libAltek_AF.so
@@ -218,6 +210,7 @@ vendor/lib/libjni_ubifocus.so
 
 vendor/lib64/libjni_blurbuster.so
 vendor/lib64/libjni_chromaflash.so
+vendor/lib64/libjni_clearsight.so
 vendor/lib64/libjni_dualcamera.so
 vendor/lib64/libjni_makeupV2.so
 vendor/lib64/libjni_optizoom.so
