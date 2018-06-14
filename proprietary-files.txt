@@ -384,22 +384,6 @@ vendor/lib/libmmcamera_imx362_arcsoft_eeprom.so
 vendor/lib/libmmcamera_imx362_eeprom.so
 vendor/lib/libmmcamera_s5k3p3_front_eeprom.so
 
-vendor/lib/libmmcamera_le2464c_eeprom.so
-vendor/lib/libmmcamera_le2464c_master_eeprom.so
-vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
-vendor/lib/libmmcamera_dw9761b_2d_eeprom.so
-vendor/lib/libmmcamera_m24c64s_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so
-vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so
-vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so
-vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so
-vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
-vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
-vendor/lib/libmmcamera_truly_cma481_eeprom.so
-vendor/lib/libmmcamera_truly_cmb433_eeprom.so
-
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
