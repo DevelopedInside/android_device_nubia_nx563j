@@ -387,8 +387,8 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Consumerir
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.msm8998.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8998.so
 
 # Fingerprint sensor
 lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@1.0.so
