@@ -492,10 +492,6 @@ etc/.tp/.thermal-mode-01-04.conf
 # TP firmware
 etc/firmware/nubia_tp_jdi_fw.img
 
-# Vibrator
-lib/hw/vibrator.default.so
-lib64/hw/vibrator.default.so
-
 # Misc
 etc/firmware/main_alOtp.bin
 etc/firmware/sub_alOtp.bin
