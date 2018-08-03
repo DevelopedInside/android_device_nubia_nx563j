@@ -1,3 +1,7 @@
+# Alipay
+lib/libteeclientjni.so
+lib64/libteeclientjni.so
+-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
 # Audio ACDB
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 etc/acdbdata/MTP/MTP_General_cal.acdb

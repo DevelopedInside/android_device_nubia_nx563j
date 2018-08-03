@@ -57,3 +57,15 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+
+# Doze mode
+PRODUCT_PACKAGES += \
+    NubiaDoze
+
+# Alipay
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
