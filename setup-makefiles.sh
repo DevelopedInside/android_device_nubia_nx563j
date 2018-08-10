@@ -22,6 +22,5 @@ export DEVICE=nx563j
 export DEVICE_COMMON=msm8998-common
 export VENDOR=nubia
 
-export DEVICE_BRINGUP_YEAR=2017
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
