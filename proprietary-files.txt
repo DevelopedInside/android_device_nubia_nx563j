@@ -176,7 +176,6 @@ lib64/libnubia_clone.so
 lib64/libnubia_effect.so
 lib64/libnubia_delay_recorder.so
 lib64/libavfilter.so
-lib64/libnubia_gallery_player.so
 lib64/libnubiajpeg.so
 lib64/libnubia_trajectory.so
 lib64/libNubiaImageAlgorithm.so
