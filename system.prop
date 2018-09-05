@@ -16,3 +16,7 @@ persist.sys.standard_charger=USB_HVDCP_3
 
 # Display
 ro.sf.lcd_density=480
+
+# Thermal
+ro.thermal.product=0
+persist.product.perf=1
