@@ -2,14 +2,6 @@
 # system.prop for nx563j
 #
 
-# Audio (Dolby)
-audio.dolby.ds2.enabled=true
-audio.dolby.ds2.hardbypass=true
-audio.ds1.metainfo.key=273
-audio.effect.name=dolby
-dolby.monospeaker=false
-dmid=3067269873
-
 # Cabl
 ro.qualcomm.cabl=0
 ro.qcom.ad=1
