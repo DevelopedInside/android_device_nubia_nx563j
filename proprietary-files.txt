@@ -10,10 +10,6 @@ etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 # Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin
 
-# Audio libraries (Dolby)
-vendor/lib/soundfx/libhwdap.so
-vendor/lib/soundfx/libswdap.so
-
 # CameraHAL
 lib/hw/camera.msm8998.so
 lib/libmm-qcamera.so
