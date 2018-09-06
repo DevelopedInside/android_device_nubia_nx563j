@@ -43,6 +43,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/calib.cfg:system/etc/calib.cfg \
     $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:system/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
 
+# Dolby
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:system/vendor/etc/dolby/dax-default.xml \
+    $(LOCAL_PATH)/configs/media_codecs_device.xml:system/etc/media_codecs_device.xml
+
 # Consumerir
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
