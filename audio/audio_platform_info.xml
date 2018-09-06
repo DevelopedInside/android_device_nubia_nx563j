@@ -114,5 +114,8 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="voice-speaker-2"/>
     </backend_names>
+    <acdb_metainfo_key>
+        <param name="dolby" value="273"/>
+    </acdb_metainfo_key>
 </audio_platform_info>
 
