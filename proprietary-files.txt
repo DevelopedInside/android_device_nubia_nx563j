@@ -28,7 +28,6 @@ lib/libarcsoft_beautyshot.so
 lib/libarcsoft_beautyshot_image_algorithm.so
 lib/libarcsoft_beautyshot_video_algorithm.so
 lib/libarcsoft_dualcam_refocus.so
-lib/libarcsoft_dualcam_refocus.so
 lib/libarcsoft_high_dynamic_range.so
 lib/libarcsoft_night_shot.so
 lib/libarcsoft_picauto.so
@@ -37,13 +36,13 @@ lib64/libarcsoft_beautyshot.so
 lib64/libarcsoft_beautyshot_image_algorithm.so
 lib64/libarcsoft_beautyshot_video_algorithm.so
 lib64/libarcsoft_dualcam_refocus.so
-lib64/libarcsoft_dualcam_refocus.so
 lib64/libarcsoft_night_shot.so
 lib64/libArcsoftAlgorithm.so
 lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so
 
 vendor/lib/libblurbuster.so
+vendor/lib/libcdsprpc.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
@@ -70,6 +69,7 @@ vendor/lib/libts_face_beautify_jni.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideobokeh.so
 vendor/lib64/libblurbuster.so
+vendor/lib64/libcdsprpc.so
 vendor/lib64/libChamomilePA.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
@@ -84,7 +84,6 @@ vendor/lib64/libvideobokeh.so
 
 vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_chromaflash_lib.so
-vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_edgesmooth_lib.so
@@ -152,7 +151,6 @@ lib/libalRnBLV.so
 lib/libalSDE2.so
 lib/libalSDK.so
 lib/libalDU_Utility.so
-lib/libalRnBLV.so
 lib/libalParseOTP.so
 lib/libalSPE.so
 lib/libarcsoft_dualcam_refocus.so
@@ -166,7 +164,6 @@ lib64/libalSDE2.so
 lib64/libalParseOTP.so
 lib64/libalSPE.so
 lib64/libArcsoftAlgorithm.so
-lib64/libarcsoft_dualcam_refocus.so
 lib64/libPrettyWaterMark.so
 lib64/libBigAperture.so
 lib64/libbuffer_manager.so
@@ -230,11 +227,6 @@ etc/camera/imx362_chromatix.xml
 etc/camera/s5k3p3_chromatix.xml
 
 # Camera chromatix
-vendor/lib/libchromatix_csidtg_common.so
-vendor/lib/libchromatix_csidtg_cpp_preview.so
-vendor/lib/libchromatix_csidtg_postproc.so
-vendor/lib/libchromatix_csidtg_preview.so
-vendor/lib/libchromatix_csidtg_zsl_preview.so
 vendor/lib/libchromatix_imx318_1080p_preview_3a.so
 vendor/lib/libchromatix_imx318_1080p_video_3a.so
 vendor/lib/libchromatix_imx318_4k_preview_3a.so
