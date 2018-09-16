@@ -1,23 +1,28 @@
+# Alipay
+lib/libteeclientjni.so
+lib64/libteeclientjni.so
+etc/permission/android.hardware.fingerprint.xml
+-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
+-framework/ifaa_fingerprint.jar
 # Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
-#Audio amplifer TAS2555
+# Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin
 
 # CameraHAL
-vendor/lib/hw/camera.msm8998.so
-vendor/lib/libmm-qcamera.so
-vendor/lib/libmmcamera_interface.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmlib2d_interface.so
-vendor/lib/libqomx_core.so
-
+lib/hw/camera.msm8998.so
+lib/libmm-qcamera.so
+lib/libmmcamera_interface.so
+lib/libmmjpeg_interface.so
+lib/libmmlib2d_interface.so
+lib/libqomx_core.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -40,13 +45,12 @@ lib64/libArcsoftAlgorithm.so
 lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so
 
-lib/libblurbuster.so
-lib64/libblurbuster.so
+vendor/lib/libblurbuster.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
-lib/libfiltergenerator.so
-lib64/libfiltergenerator.so
+vendor/lib/libedge_smooth_hvx_stub.so
+vendor/lib/libfiltergenerator.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -60,23 +64,23 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-lib/libtrueportrait.so
-lib64/libtrueportrait.so
-vendor/lib/libts_detected_face_hal.so
-lib/libts_detected_face_jni.so
-vendor/lib/libts_face_beautify_hal.so
-lib/libts_face_beautify_jni.so
+vendor/lib/libtrueportrait.so
+-vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_detected_face_jni.so
+-vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libts_face_beautify_jni.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideobokeh.so
+vendor/lib64/libblurbuster.so
 vendor/lib64/libChamomilePA.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libseemore.so
-vendor/lib64/libts_detected_face_hal.so
-lib64/libts_detected_face_jni.so
-vendor/lib64/libts_face_beautify_hal.so
-lib64/libts_face_beautify_jni.so
+-vendor/lib64/libts_detected_face_hal.so
+vendor/lib64/libts_detected_face_jni.so
+-vendor/lib64/libts_face_beautify_hal.so
+vendor/lib64/libts_face_beautify_jni.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideobokeh.so
 
@@ -85,6 +89,7 @@ vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
+vendor/lib/libmmcamera_edgesmooth_lib.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -96,6 +101,7 @@ vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
+vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so
 vendor/lib/libmmcamera_llvd.so
 vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_paaf_lib.so
@@ -104,6 +110,8 @@ vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
+vendor/lib/libmmcamera_sac_lib.so
+vendor/lib/libmmcamera_sat_dummy_lib.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
@@ -174,6 +182,7 @@ lib64/libnubia_clone.so
 lib64/libnubia_effect.so
 lib64/libnubia_delay_recorder.so
 lib64/libavfilter.so
+lib64/libnubia_gallery_player.so
 lib64/libnubiajpeg.so
 lib64/libnubia_trajectory.so
 lib64/libNubiaImageAlgorithm.so
@@ -193,73 +202,65 @@ vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera app modules
-lib/libjni_blurbuster.so
-lib/libjni_chromaflash.so
-lib/libjni_dualcamera.so
-lib/libjni_filtergenerator.so
-lib/libjni_makeupV2.so
-lib/libjni_optizoom.so
-lib/libjni_panorama.so
-lib/libjni_sharpshooter.so
-lib/libjni_stillmore.so
-lib/libjni_trackingfocus.so
-lib/libjni_ubifocus.so
+vendor/lib/libjni_blurbuster.so
+vendor/lib/libjni_chromaflash.so
+vendor/lib/libjni_dualcamera.so
+vendor/lib/libjni_filtergenerator.so
+vendor/lib/libjni_makeupV2.so
+vendor/lib/libjni_optizoom.so
+vendor/lib/libjni_panorama.so
+vendor/lib/libjni_sharpshooter.so
+vendor/lib/libjni_stillmore.so
+vendor/lib/libjni_trackingfocus.so
+vendor/lib/libjni_ubifocus.so
 
-lib64/libjni_blurbuster.so
-lib64/libjni_chromaflash.so 
-lib64/libjni_clearsight.so
-lib64/libjni_dualcamera.so
-lib64/libjni_makeupV2.so
-lib64/libjni_optizoom.so
-lib64/libjni_panorama.so
-lib64/libjni_sharpshooter.so
-lib64/libjni_stillmore.so
-lib64/libjni_trackingfocus.so
-lib64/libjni_ubifocus.so
+vendor/lib64/libjni_blurbuster.so
+vendor/lib64/libjni_chromaflash.so
+vendor/lib64/libjni_clearsight.so
+vendor/lib64/libjni_dualcamera.so
+vendor/lib64/libjni_makeupV2.so
+vendor/lib64/libjni_optizoom.so
+vendor/lib64/libjni_panorama.so
+vendor/lib64/libjni_sharpshooter.so
+vendor/lib64/libjni_stillmore.so
+vendor/lib64/libjni_trackingfocus.so
+vendor/lib64/libjni_ubifocus.so
 
 # Camera configs
-vendor/etc/camera/camera_config.xml
-vendor/etc/camera/csidtg_camera.xml
-vendor/etc/camera/csidtg_chromatix.xml
-vendor/etc/camera/imx318_arcsoft_chromatix.xml
-vendor/etc/camera/imx318_chromatix.xml
-vendor/etc/camera/imx362_chromatix.xml
-vendor/etc/camera/imx362_chromatix_bear.xml
-vendor/etc/camera/imx362_gt24c64a_chromatix.xml
-vendor/etc/camera/s5k3p3_chromatix.xml
+etc/camera/camera_config.xml
+etc/camera/imx318_chromatix.xml
+etc/camera/imx362_chromatix.xml
+etc/camera/s5k3p3_chromatix.xml
 
 # Camera chromatix
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
 vendor/lib/libchromatix_csidtg_preview.so
+vendor/lib/libchromatix_csidtg_zsl_preview.so
 vendor/lib/libchromatix_imx318_1080p_preview_3a.so
 vendor/lib/libchromatix_imx318_1080p_video_3a.so
 vendor/lib/libchromatix_imx318_4k_preview_3a.so
 vendor/lib/libchromatix_imx318_4k_video_3a.so
 vendor/lib/libchromatix_imx318_a3_3dtest_mode.so
-vendor/lib/libchromatix_imx318_a3_arcsoft_bokeh.so
 vendor/lib/libchromatix_imx318_a3_bokeh_mode.so
-vendor/lib/libchromatix_imx318_a3_electron_aperture.so
 vendor/lib/libchromatix_imx318_a3_elec_aper_hand.so
+vendor/lib/libchromatix_imx318_a3_electron_aperture.so
 vendor/lib/libchromatix_imx318_a3_iso128_preview.so
 vendor/lib/libchromatix_imx318_a3_iso128_preview_dng.so
 vendor/lib/libchromatix_imx318_a3_light_painting.so
 vendor/lib/libchromatix_imx318_a3_panorama.so
 vendor/lib/libchromatix_imx318_a3_profession_mode.so
 vendor/lib/libchromatix_imx318_a3_startrack.so
-vendor/lib/libchromatix_imx318_arcsoft_bokeh.so
 vendor/lib/libchromatix_imx318_bokeh.so
 vendor/lib/libchromatix_imx318_common.so
 vendor/lib/libchromatix_imx318_common_bokeh.so
 vendor/lib/libchromatix_imx318_common_dng.so
 vendor/lib/libchromatix_imx318_common_iso128.so
 vendor/lib/libchromatix_imx318_common_iso128_dng.so
-vendor/lib/libchromatix_imx318_cpp_arcsoft_bokeh.so
 vendor/lib/libchromatix_imx318_cpp_bokeh.so
 vendor/lib/libchromatix_imx318_cpp_electron_aperture.so
 vendor/lib/libchromatix_imx318_cpp_hfr_120.so
-vendor/lib/libchromatix_imx318_cpp_hfr_240.so
 vendor/lib/libchromatix_imx318_cpp_hfr_60.so
 vendor/lib/libchromatix_imx318_cpp_iso128_preview.so
 vendor/lib/libchromatix_imx318_cpp_iso128_preview_dng.so
@@ -291,7 +292,6 @@ vendor/lib/libchromatix_imx318_hdr_snapshot_3a.so
 vendor/lib/libchromatix_imx318_hdr_video_3a.so
 vendor/lib/libchromatix_imx318_hfr_120.so
 vendor/lib/libchromatix_imx318_hfr_120_3a.so
-vendor/lib/libchromatix_imx318_hfr_240.so
 vendor/lib/libchromatix_imx318_hfr_60.so
 vendor/lib/libchromatix_imx318_hfr_60_3a.so
 vendor/lib/libchromatix_imx318_isp_electron_aperture.so
@@ -310,13 +310,11 @@ vendor/lib/libchromatix_imx318_snapshot_hdr.so
 vendor/lib/libchromatix_imx318_video_4k.so
 vendor/lib/libchromatix_imx318_video_hdr.so
 
-vendor/lib/libchromatix_imx362_1080p_preview_3a.so
 vendor/lib/libchromatix_imx362_1080p_video_3a.so
-vendor/lib/libchromatix_imx362_4k_preview_3a.so
 vendor/lib/libchromatix_imx362_4k_video_3a.so
 vendor/lib/libchromatix_imx362_a3_3dtest_mode.so
-vendor/lib/libchromatix_imx362_a3_electron_aperture.so
 vendor/lib/libchromatix_imx362_a3_elec_aper_hand.so
+vendor/lib/libchromatix_imx362_a3_electron_aperture.so
 vendor/lib/libchromatix_imx362_a3_iso128_preview.so
 vendor/lib/libchromatix_imx362_a3_light_painting.so
 vendor/lib/libchromatix_imx362_a3_panorama.so
@@ -328,12 +326,10 @@ vendor/lib/libchromatix_imx362_common_binning.so
 vendor/lib/libchromatix_imx362_common_iso128.so
 vendor/lib/libchromatix_imx362_cpp_electron_aperture.so
 vendor/lib/libchromatix_imx362_cpp_hfr_120.so
-vendor/lib/libchromatix_imx362_cpp_hfr_240.so
 vendor/lib/libchromatix_imx362_cpp_hfr_60.so
 vendor/lib/libchromatix_imx362_cpp_iso128_preview.so
 vendor/lib/libchromatix_imx362_cpp_iso128_snapshot.so
 vendor/lib/libchromatix_imx362_cpp_light_painting.so
-vendor/lib/libchromatix_imx362_cpp_liveshot.so
 vendor/lib/libchromatix_imx362_cpp_microspur_snapshot.so
 vendor/lib/libchromatix_imx362_cpp_mtf_denoise.so
 vendor/lib/libchromatix_imx362_cpp_panorama.so
@@ -349,51 +345,11 @@ vendor/lib/libchromatix_imx362_cpp_video_4k.so
 vendor/lib/libchromatix_imx362_cpp_video_hdr.so
 vendor/lib/libchromatix_imx362_default_preview_3a.so
 vendor/lib/libchromatix_imx362_default_video.so
-vendor/lib/libchromatix_imx362_default_video_3a.so
 vendor/lib/libchromatix_imx362_fullsize_preview_3a.so
-vendor/lib/libchromatix_imx362_fullsize_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_1080p_preview_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_1080p_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_4k_preview_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_4k_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_common.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_hfr_120.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_hfr_240.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_hfr_60.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_liveshot.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_preview.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_snapshot.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_snapshot_downscale.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_snapshot_hdr.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_snapshot_upscale.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_video.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_video_4k.so
-vendor/lib/libchromatix_imx362_gt24c64a_cpp_video_hdr.so
-vendor/lib/libchromatix_imx362_gt24c64a_default_preview_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_default_video.so
-vendor/lib/libchromatix_imx362_gt24c64a_default_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_fullsize_preview_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_fullsize_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_hdr_snapshot_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_hdr_video_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_120.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_120_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_240.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_240_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_60.so
-vendor/lib/libchromatix_imx362_gt24c64a_hfr_60_3a.so
-vendor/lib/libchromatix_imx362_gt24c64a_postproc.so
-vendor/lib/libchromatix_imx362_gt24c64a_preview.so
-vendor/lib/libchromatix_imx362_gt24c64a_snapshot.so
-vendor/lib/libchromatix_imx362_gt24c64a_snapshot_hdr.so
-vendor/lib/libchromatix_imx362_gt24c64a_video_4k.so
-vendor/lib/libchromatix_imx362_gt24c64a_video_hdr.so
 vendor/lib/libchromatix_imx362_hdr_snapshot_3a.so
 vendor/lib/libchromatix_imx362_hdr_video_3a.so
 vendor/lib/libchromatix_imx362_hfr_120.so
 vendor/lib/libchromatix_imx362_hfr_120_3a.so
-vendor/lib/libchromatix_imx362_hfr_240.so
-vendor/lib/libchromatix_imx362_hfr_240_3a.so
 vendor/lib/libchromatix_imx362_hfr_60.so
 vendor/lib/libchromatix_imx362_hfr_60_3a.so
 vendor/lib/libchromatix_imx362_isp_electron_aperture.so
@@ -435,22 +391,21 @@ vendor/lib/libmmcamera_imx362_eeprom.so
 vendor/lib/libmmcamera_s5k3p3_front_eeprom.so
 
 # Camera firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera nubia firmware
-vendor/etc/firmware/miniBoot.bin
-vendor/etc/firmware/SCTable.asb
-vendor/etc/firmware/TBM_D2.bin
+etc/firmware/miniBoot.bin
+etc/firmware/TBM_D2.bin
+etc/firmware/SCTable.asb
 
 # Camera sensors
 vendor/lib/libmmcamera_imx318.so
@@ -486,9 +441,9 @@ vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
 vendor/lib/libmmcamera_isp_gamma44.so
 vendor/lib/libmmcamera_isp_gic48.so
 vendor/lib/libmmcamera_isp_gtm46.so
-vendor/lib/libmmcamera_isp_hdr48.so
 vendor/lib/libmmcamera_isp_hdr_be_stats46.so
 vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so
+vendor/lib/libmmcamera_isp_hdr48.so
 vendor/lib/libmmcamera_isp_ihist_stats46.so
 vendor/lib/libmmcamera_isp_linearization40.so
 vendor/lib/libmmcamera_isp_ltm47.so
@@ -506,36 +461,24 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Charger
-vendor/bin/hvdcp_opti
+bin/hvdcp_opti
 
 # Consumerir
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
+lib/hw/consumerir.default.so
+lib64/hw/consumerir.default.so
 
 # Fingerprint sensor
-lib64/com.fingerprints.extension@1.0.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
-vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc
-etc/permissions/android.hardware.fingerprint.xml
-
+lib/hw/fingerprint.msm8998.so
+lib64/hw/fingerprint.msm8998.so
+lib/lib_fpc_tac_shared.so
+lib64/lib_fpc_tac_shared.so
+lib64/libfpc_fingerprints_service_ex.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf
 etc/nfcee_access.xml
-vendor/bin/hw/android.hardware.nfc@1.0-service
-vendor/etc/init/android.hardware.nfc@1.0-service.rc
-etc/libnfc-brcm.conf
-etc/permissions/android.hardware.nfc.hce.xml
-etc/permissions/android.hardware.nfc.xml
-etc/permissions/com.android.nfc_extras.xml
-vendor/lib/hw/android.hardware.nfc@1.0-impl.so
-vendor/lib/hw/nfc_nci.bcm2079x.default.so
-vendor/lib64/hw/android.hardware.nfc@1.0-impl.so
-vendor/lib64/hw/nfc_nci.bcm2079x.default.so
+lib64/hw/nfc_nci.bcm2079x.default.so
+vendor/firmware/Generic_unsigned_706.ncd
 vendor/firmware/BCM20797A1_001.002.015.2562.0011_Generic_I2C_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0007_I2C_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0010_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0010_I2C_configdata.ncd
@@ -547,17 +490,10 @@ etc/.tp/.thermal-mode-00-01.conf
 etc/.tp/.thermal-mode-00-02.conf
 etc/.tp/.thermal-mode-00-03.conf
 etc/.tp/.thermal-mode-00-04.conf
-etc/.tp/.thermal-mode-00-05.conf
 etc/.tp/.thermal-mode-01-01.conf
 etc/.tp/.thermal-mode-01-02.conf
 etc/.tp/.thermal-mode-01-03.conf
 etc/.tp/.thermal-mode-01-04.conf
-etc/.tp/.thermal-mode-01-05.conf
-etc/.tp/.thermal-mode-02-01.conf
-etc/.tp/.thermal-mode-02-02.conf
-etc/.tp/.thermal-mode-02-03.conf
-etc/.tp/.thermal-mode-02-04.conf
-etc/.tp/.thermal-mode-02-05.conf
 
 # TP firmware
 etc/firmware/nubia_tp_jdi_fw.img
@@ -567,14 +503,11 @@ etc/firmware/main_alOtp.bin
 etc/firmware/sub_alOtp.bin
 
 vendor/firmware/Generic_unsigned.ncd
-vendor/firmware/Generic_unsigned_1021_1.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
 vendor/firmware/Generic_unsigned_222_1.ncd
 vendor/firmware/Generic_unsigned_512_3.ncd
 vendor/firmware/Generic_unsigned_706.ncd
-vendor/firmware/Generic_unsigned_725.ncd
 vendor/firmware/Generic_unsigned_822_2.ncd
 vendor/firmware/Generic_unsigned_918_1.ncd
 vendor/firmware/Generic_unsigned_fix_p2p_stuck.ncd
 vendor/firmware/Generic_unsigned_SY.ncd
-

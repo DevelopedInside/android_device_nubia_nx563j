@@ -19,15 +19,13 @@
 
 DEVICE_PATH := device/nubia/nx563j
 
-# OTA Assert
-TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
-
-# lineage Hardware
+# Lineage Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
+
 # Kernel
-TARGET_KERNEL_CONFIG := msmcortex-NX563J_defconfig
+TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
 DTS_NAME += \
     msm8998-v2.1-mtp-NX563J.dtb \
     msm8998-v2-mtp-NX563J.dtb \
