@@ -42,9 +42,9 @@
          app, they can be remapped here. The format is
          "oldname:newname", one per entry. -->
     <string-array name="config_displayModeMappings" translatable="false">
-        <item>argb:standard</item>
-        <item>eye_mode:reading</item>
-        <item>srgb:srgb</item>
+        <item>0_argb:standard</item>
+        <item>1_eye_pro:reading</item>
+        <item>2_srgb1:srgb</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.
