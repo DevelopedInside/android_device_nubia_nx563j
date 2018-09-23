@@ -459,6 +459,38 @@ lib/lib_fpc_tac_shared.so
 lib64/lib_fpc_tac_shared.so
 lib64/libfpc_fingerprints_service_ex.so
 
+# Graphics firmware
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/a530_gpmu.fw2
+etc/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw
+etc/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2
+etc/firmware/a530_zap.b00
+etc/firmware/a530_zap.b01
+etc/firmware/a530_zap.b02
+etc/firmware/a530_zap.elf
+etc/firmware/a530_zap.mdt
+etc/firmware/a540_gpmu.fw2
+etc/firmware/a540_zap.b00
+etc/firmware/a540_zap.b01
+etc/firmware/a540_zap.b02
+etc/firmware/a540_zap.elf
+etc/firmware/a540_zap.mdt
+
+# IPA
+bin/ipacm-diag
+etc/firmware/ipa_fws.b00
+etc/firmware/ipa_fws.b01
+etc/firmware/ipa_fws.b02
+etc/firmware/ipa_fws.b03
+etc/firmware/ipa_fws.b04
+etc/firmware/ipa_fws.mdt
+
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf
 etc/nfcee_access.xml
@@ -469,6 +501,10 @@ vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM207
 vendor/firmware/BCM20797B0_002.001.043.2562.0010_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0010_I2C_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2564.0002_Generic_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2565.0005_Generic_NCD_Unsigned_configdata.ncd
+
+# Sensors
+etc/sensors/hals.conf
+etc/sensors/sensor_def_qcomdev.conf
 
 # Thermal nubia config
 etc/.tp/.thermal-mode-00-01.conf
