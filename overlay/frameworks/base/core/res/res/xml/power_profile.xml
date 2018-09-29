@@ -48,6 +48,7 @@
         <value>2.8</value>
     </array>
     <array name="gpu.speeds">
+        <value>710000</value>
         <value>670000</value>
         <value>596000</value>
         <value>515000</value>
@@ -56,6 +57,7 @@
         <value>257000</value>
     </array>
     <array name="gpu.active">
+        <value>458</value>
         <value>424</value>
         <value>404</value>
         <value>385</value>
