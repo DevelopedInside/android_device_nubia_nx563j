@@ -25,6 +25,7 @@
 #include "Camera3Wrapper.h"
 
 static camera_module_t *gVendorModule = 0;
+static char prop[PROPERTY_VALUE_MAX];
 
 static int check_vendor_module()
 {
@@ -71,10 +72,24 @@ static int camera_device_open(const hw_module_t* module, const char* name,
 {
     int rv = -EINVAL;
 
+    // Check HAL3 enabled
+    property_get("persist.camera.HAL3.enabled", prop, "1");
+    int isHAL3Enabled = atoi(prop);
+
+    ALOGV("%s: property persist.camera.HAL3.enabled is set to %d", __FUNCTION__, isHAL3Enabled);
+
+
     if (name != NULL) {
         if (check_vendor_module())
             return -EINVAL;
-        rv = camera3_device_open(module, name, device);
+        //rv = camera3_device_open(module, name, device);
+        if (isHAL3Enabled) {
+            ALOGV("%s: using HAL3", __FUNCTION__);
+            rv = camera3_device_open(module, name, device);
+        } else {
+            ALOGV("%s: using HAL2", __FUNCTION__);
+            rv = camera2_device_open(module, name, device);
+        }
     }
 
     return rv;
