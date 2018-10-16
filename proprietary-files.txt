@@ -11,7 +11,7 @@ etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 etc/firmware/tas2555_uCDSP.bin
 
 # CameraHAL
-lib/hw/camera.msm8998.so
+lib/hw/camera.msm8998.so:lib/hw/camera.vendor.msm8998.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
