@@ -100,6 +100,35 @@ static char * camera2_fixup_setparams(int id __unused, const char * settings)
 	params.set("video-cds-mode", "off");
 	params.set("cds-mode", "off");
 
+    // enable nubia neovision postprocessing
+    char prop[PROPERTY_VALUE_MAX];
+    property_get("persist.camera.global.enable_nubia_cam_postprocessing", prop, "0");
+    int enableNubiaCam = atoi(prop);
+
+    if (enableNubiaCam) {
+        // bool nubia_app = strcmp(params.get("zte_camera"), "1") == 0;
+        bool nubia_app = strcmp(params.get("nubia_exif_rotation"), "1") == 0; // i don't know what check
+
+        if (!nubia_app) {
+            const char* sceneMode = params.get("scene-mode");
+            if (sceneMode && *sceneMode) {
+                /*
+                * Turn on Nubia postprocessing in the following camera modes. Otherwise, turn them off to
+                * avoid problems in other modes (for example, HDR)
+                */
+                if (strcmp(sceneMode, "auto") == 0 || strcmp(sceneMode, "asd") == 0) {
+                    params.set("camera_app_mode", "1");
+                    params.set("camera_demister_value", "50");
+                    params.set("zte_zoom_crop", "1");
+                } else {
+                    params.set("camera_app_mode", "0");
+                    params.set("camera_demister_value", "0");
+                    params.set("zte_zoom_crop", "0");
+                }
+            }
+        }
+    }
+
 #ifdef LOG_PARAMETERS
     ALOGV("%s: Fixed parameters:", __FUNCTION__);
     params.dump();
