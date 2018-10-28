@@ -16,8 +16,8 @@
 
 $(call inherit-product, device/nubia/nx563j/full_nx563j.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_nx563j
 PRODUCT_DEVICE := nx563j
