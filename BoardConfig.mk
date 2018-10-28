@@ -29,12 +29,6 @@ BOARD_HARDWARE_CLASS += \
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
-DTS_NAME += \
-    msm8998-v2.1-mtp-NX563J.dtb \
-    msm8998-v2-mtp-NX563J.dtb \
-    msm8998-mtp-NX563J.dtb
-ZTEMT_DTS_NAME:=$(DTS_NAME)
-export ZTEMT_DTS_NAME
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
