@@ -30,7 +30,7 @@ import org.lineageos.internal.util.FileUtils;
 
 public class KeyDisabler {
 
-    private static String CONTROL_PATH = "/sys/class/tpnode/tpnode/synaptics/0dbutton";
+    private static String CONTROL_PATH = "/sys/class/input/input4/0dbutton";
 
     public static boolean isSupported() {
         return FileUtils.isFileWritable(CONTROL_PATH);

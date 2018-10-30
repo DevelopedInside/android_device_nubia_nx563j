@@ -36,5 +36,8 @@ TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Tap-to-wake
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input4/wake_gesture"
+
 # inherit from the proprietary version
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
