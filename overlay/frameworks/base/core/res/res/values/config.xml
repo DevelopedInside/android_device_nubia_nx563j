@@ -94,6 +94,9 @@
     <!-- Button Brightness -->
     <integer name="config_buttonBrightnessSettingDefault">255</integer>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
             1 - Menu key
