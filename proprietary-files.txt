@@ -1,22 +1,22 @@
 # Audio ACDB
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin
 
 # CameraHAL
-lib/hw/camera.msm8998.so
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmmlib2d_interface.so
-lib/libqomx_core.so
+vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmlib2d_interface.so
+vendor/lib/libqomx_core.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -37,13 +37,11 @@ lib64/libArcsoftAlgorithm.so
 lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so
 
-vendor/lib/libblurbuster.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
-vendor/lib/libedge_smooth_hvx_stub.so
-vendor/lib/libfiltergenerator.so
+lib/libfiltergenerator.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -57,24 +55,24 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libtrueportrait.so
+lib/libtrueportrait.so
 -vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_detected_face_jni.so
+lib/libts_detected_face_jni.so
 -vendor/lib/libts_face_beautify_hal.so
-vendor/lib/libts_face_beautify_jni.so
+lib/libts_face_beautify_jni.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideobokeh.so
-vendor/lib64/libblurbuster.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libChamomilePA.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libseemore.so
+lib64/libtrueportrait.so
 -vendor/lib64/libts_detected_face_hal.so
-vendor/lib64/libts_detected_face_jni.so
+lib64/libts_detected_face_jni.so
 -vendor/lib64/libts_face_beautify_hal.so
-vendor/lib64/libts_face_beautify_jni.so
+lib64/libts_face_beautify_jni.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideobokeh.so
 
@@ -82,7 +80,6 @@ vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
-vendor/lib/libmmcamera_edgesmooth_lib.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -94,7 +91,6 @@ vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so
 vendor/lib/libmmcamera_llvd.so
 vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_paaf_lib.so
@@ -103,8 +99,6 @@ vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_sac_lib.so
-vendor/lib/libmmcamera_sat_dummy_lib.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
@@ -192,35 +186,35 @@ vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera app modules
-vendor/lib/libjni_blurbuster.so
-vendor/lib/libjni_chromaflash.so
-vendor/lib/libjni_dualcamera.so
-vendor/lib/libjni_filtergenerator.so
-vendor/lib/libjni_makeupV2.so
-vendor/lib/libjni_optizoom.so
-vendor/lib/libjni_panorama.so
-vendor/lib/libjni_sharpshooter.so
-vendor/lib/libjni_stillmore.so
-vendor/lib/libjni_trackingfocus.so
-vendor/lib/libjni_ubifocus.so
+lib/libjni_blurbuster.so
+lib/libjni_chromaflash.so
+lib/libjni_dualcamera.so
+lib/libjni_filtergenerator.so
+lib/libjni_makeupV2.so
+lib/libjni_optizoom.so
+lib/libjni_panorama.so
+lib/libjni_sharpshooter.so
+lib/libjni_stillmore.so
+lib/libjni_trackingfocus.so
+lib/libjni_ubifocus.so
 
-vendor/lib64/libjni_blurbuster.so
-vendor/lib64/libjni_chromaflash.so
-vendor/lib64/libjni_clearsight.so
-vendor/lib64/libjni_dualcamera.so
-vendor/lib64/libjni_makeupV2.so
-vendor/lib64/libjni_optizoom.so
-vendor/lib64/libjni_panorama.so
-vendor/lib64/libjni_sharpshooter.so
-vendor/lib64/libjni_stillmore.so
-vendor/lib64/libjni_trackingfocus.so
-vendor/lib64/libjni_ubifocus.so
+lib64/libjni_blurbuster.so
+lib64/libjni_chromaflash.so
+lib64/libjni_clearsight.so
+lib64/libjni_dualcamera.so
+lib64/libjni_makeupV2.so
+lib64/libjni_optizoom.so
+lib64/libjni_panorama.so
+lib64/libjni_sharpshooter.so
+lib64/libjni_stillmore.so
+lib64/libjni_trackingfocus.so
+lib64/libjni_ubifocus.so
 
 # Camera configs
-etc/camera/camera_config.xml
-etc/camera/imx318_chromatix.xml
-etc/camera/imx362_chromatix.xml
-etc/camera/s5k3p3_chromatix.xml
+vendor/etc/camera/camera_config.xml
+vendor/etc/camera/imx318_chromatix.xml
+vendor/etc/camera/imx362_chromatix.xml
+vendor/etc/camera/s5k3p3_chromatix.xml
 
 # Camera chromatix
 vendor/lib/libchromatix_imx318_1080p_preview_3a.so
@@ -376,21 +370,21 @@ vendor/lib/libmmcamera_imx362_eeprom.so
 vendor/lib/libmmcamera_s5k3p3_front_eeprom.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_12_0.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera nubia firmware
-etc/firmware/miniBoot.bin
-etc/firmware/TBM_D2.bin
-etc/firmware/SCTable.asb
+vendor/etc/firmware/miniBoot.bin
+vendor/etc/firmware/TBM_D2.bin
+vendor/etc/firmware/SCTable.asb
 
 # Camera sensors
 vendor/lib/libmmcamera_imx318.so
@@ -445,24 +439,21 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
-# Charger
-bin/hvdcp_opti
-
 # Consumerir
-lib/hw/consumerir.default.so
-lib64/hw/consumerir.default.so
+vendor/lib/hw/consumerir.default.so
+vendor/lib64/hw/consumerir.default.so
 
 # Fingerprint sensor
-lib/hw/fingerprint.msm8998.so
-lib64/hw/fingerprint.msm8998.so
-lib/lib_fpc_tac_shared.so
-lib64/lib_fpc_tac_shared.so
-lib64/libfpc_fingerprints_service_ex.so
+etc/permissions/com.fingerprints.extension.xml
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+vendor/framework/com.fingerprints.extension.jar
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf
 etc/nfcee_access.xml
-lib64/hw/nfc_nci.bcm2079x.default.so
+vendor/lib64/hw/nfc_nci.bcm2079x.default.so
 vendor/firmware/Generic_unsigned_706.ncd
 vendor/firmware/BCM20797A1_001.002.015.2562.0011_Generic_I2C_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0007_I2C_configdata.ncd
