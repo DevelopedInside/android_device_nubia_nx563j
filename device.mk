@@ -18,7 +18,9 @@
 $(call inherit-product, vendor/nubia/nx563j/nx563j-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Inherit from msm8998-common
 $(call inherit-product, device/nubia/msm8998-common/msm8998.mk)

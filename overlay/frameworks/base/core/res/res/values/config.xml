@@ -88,12 +88,6 @@
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">120</integer>
 
-    <!-- Button illumination -->
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
-
-    <!-- Button Brightness -->
-    <integer name="config_buttonBrightnessSettingDefault">255</integer>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
