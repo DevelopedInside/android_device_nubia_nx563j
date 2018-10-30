@@ -27,6 +27,9 @@ TARGET_OTA_ASSERT_DEVICE := NX563J,nx563j
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
 
