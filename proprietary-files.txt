@@ -450,6 +450,11 @@ framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
+vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc
+lib64/com.fingerprints.extension@1.0.so
+vendor/lib/libteeclientjni.so
+vendor/lib64/libteeclientjni.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf
