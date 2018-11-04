@@ -117,10 +117,12 @@ static char * camera2_fixup_setparams(int id __unused, const char * settings)
                 * avoid problems in other modes (for example, HDR)
                 */
                 if (strcmp(sceneMode, "auto") == 0 || strcmp(sceneMode, "asd") == 0) {
+                    params.set("camera-mode", "1");
                     params.set("camera_app_mode", "1");
                     params.set("camera_demister_value", "50");
                     params.set("zte_zoom_crop", "1");
                 } else {
+                    params.set("camera-mode", "0");
                     params.set("camera_app_mode", "0");
                     params.set("camera_demister_value", "0");
                     params.set("zte_zoom_crop", "0");
