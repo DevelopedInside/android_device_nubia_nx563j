@@ -20,7 +20,6 @@
 #include <hardware/camera.h>
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
-#include <camera/CameraParametersExtra.h>
 
 static android::Mutex gCameraWrapperLock;
 
