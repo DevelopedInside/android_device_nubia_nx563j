@@ -96,13 +96,13 @@ static char * camera2_fixup_setparams(int id __unused, const char * settings)
     params.dump();
 #endif
 
-	// disable CDS video mode
-	params.set("video-cds-mode", "off");
-	params.set("cds-mode", "off");
+    // disable CDS video mode
+    params.set("video-cds-mode", "off");
+    params.set("cds-mode", "off");
 
     // enable nubia neovision postprocessing
     char prop[PROPERTY_VALUE_MAX];
-    property_get("persist.camera.global.enable_nubia_cam_postprocessing", prop, "0");
+    property_get("persist.camera.nubia_postproc", prop, "0");
     int enableNubiaCam = atoi(prop);
 
     if (enableNubiaCam) {
