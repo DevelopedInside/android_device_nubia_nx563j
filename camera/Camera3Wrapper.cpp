@@ -55,7 +55,7 @@ static int check_vendor_module()
  * Camera3 wrapper fixup functions
  *******************************************************************/
 
-static const camera_metadata_t * camera3_fixup_construct_default_request_settings(android::CameraMetadata metadata)
+static const camera_metadata_t * camera3_fixup_construct_default_request_settings(android::CameraMetadata metadata, int type)
 {
     return metadata.release();
 }
@@ -107,7 +107,7 @@ static const camera_metadata_t *camera3_construct_default_request_settings(const
 
     android::CameraMetadata metadata;
     metadata = VENDOR_CALL(device, construct_default_request_settings, type);
-    return camera3_fixup_construct_default_request_settings(metadata);
+    return camera3_fixup_construct_default_request_settings(metadata, type);
 }
 
 static int camera3_process_capture_request(const camera3_device_t *device, camera3_capture_request_t *request)
