@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/calib.cfg:system/etc/calib.cfg \
     $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:system/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8998
+
 # ConfigPanel
 PRODUCT_PACKAGES += \
     ConfigPanel
