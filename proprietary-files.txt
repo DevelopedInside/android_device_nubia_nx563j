@@ -10,6 +10,12 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 # Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin
 
+# Alipay
+vendor/lib/libteeclientjni.so
+vendor/lib64/libteeclientjni.so
+-framework/ifaa_fingerprint.jar
+-priv-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
+
 # CameraHAL
 vendor/lib/hw/camera.msm8998.so:vendor/lib/hw/camera.vendor.msm8998.so
 vendor/lib/libmmcamera_interface.so
