@@ -5,7 +5,7 @@
 # Cabl
 ro.qualcomm.cabl=0
 ro.qcom.ad=1
-ro.qcom.ad.calib.data=/system/etc/calib.cfg
+ro.qcom.ad.calib.data=/vendor/etc/calib.cfg
 ro.qcom.ad.sensortype=2
 
 # Camera
