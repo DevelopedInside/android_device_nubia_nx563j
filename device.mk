@@ -44,8 +44,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Display configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/display/calib.cfg:system/etc/calib.cfg \
-    $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:system/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
+    $(LOCAL_PATH)/display/calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calib.cfg \
+    $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -66,11 +66,11 @@ PRODUCT_COPY_FILES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/input_proxy.idc:system/usr/idc/input_proxy.idc
+    $(LOCAL_PATH)/idc/input_proxy.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/input_proxy.idc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:system/usr/keylayout/nubia_synaptics_dsx.kl
+    $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/nubia_synaptics_dsx.kl
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -82,4 +82,4 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf
