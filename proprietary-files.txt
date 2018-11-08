@@ -449,6 +449,7 @@ vendor/lib64/hw/consumerir.default.so
 # Fingerprint sensor
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@1.0.so
+lib64/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc
 vendor/lib/libteeclientjni.so
