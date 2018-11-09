@@ -43,10 +43,15 @@ lib64/libArcsoftAlgorithm.so:vendor/lib64/libarcsoft_night_shot.so
 lib64/libDualCamera_Calibration.so:vendor/lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so:vendor/lib64/libmpbase.so
 
+lib/libblurbuster.so
+lib/libhazebuster.so
 lib/libfiltergenerator.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib/libts_detected_face_jni.so:vendor/lib/libts_detected_face_jni.so
 lib/libts_face_beautify_jni.so:vendor/lib/libts_face_beautify_jni.so
+lib64/libblurbuster.so
+lib64/libhazebuster.so
+lib64/libfiltergenerator.so
 lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
 lib64/libts_detected_face_jni.so:vendor/lib64/libts_detected_face_jni.so
 lib64/libts_face_beautify_jni.so:vendor/lib64/libts_face_beautify_jni.so
