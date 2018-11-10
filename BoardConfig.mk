@@ -39,5 +39,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Tap-to-wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input1/wake_gesture"
 
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
