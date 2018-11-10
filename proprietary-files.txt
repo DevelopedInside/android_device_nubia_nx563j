@@ -487,8 +487,8 @@ etc/.tp/.thermal-mode-01-04.conf:vendor/etc/.tp/.thermal-mode-01-04.conf
 etc/firmware/nubia_tp_jdi_fw.img:vendor/firmware/nubia_tp_jdi_fw.img
 
 # Misc
-etc/firmware/main_alOtp.bin
-etc/firmware/sub_alOtp.bin
+etc/firmware/main_alOtp.bin:vendor/firmware/main_alOtp.bin
+etc/firmware/sub_alOtp.bin:vendor/firmware/sub_alOtp.bin
 
 vendor/firmware/Generic_unsigned.ncd
 vendor/firmware/Generic_unsigned_119_1.ncd
