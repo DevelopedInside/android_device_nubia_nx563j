@@ -39,7 +39,7 @@ lib64/libarcsoft_beautyshot_image_algorithm.so:vendor/lib64/libarcsoft_beautysho
 lib64/libarcsoft_beautyshot_video_algorithm.so:vendor/lib64/libarcsoft_beautyshot_video_algorithm.so
 lib64/libarcsoft_dualcam_refocus.so:vendor/lib64/libarcsoft_dualcam_refocus.so
 lib64/libarcsoft_night_shot.so:vendor/lib64/libarcsoft_night_shot.so
-lib64/libArcsoftAlgorithm.so:vendor/lib64/libarcsoft_night_shot.so
+lib64/libArcsoftAlgorithm.so:vendor/lib64/libArcsoftAlgorithm.so
 lib64/libDualCamera_Calibration.so:vendor/lib64/libDualCamera_Calibration.so
 lib64/libmpbase.so:vendor/lib64/libmpbase.so
 
