@@ -2257,6 +2257,7 @@
     </path>
 
     <path name="speaker">
+        <ctl name="Configuration" value="0" />
         <!-- <ctl name="COMP7 Switch" value="1" />
         <ctl name="COMP8 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
