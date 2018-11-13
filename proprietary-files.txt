@@ -24,6 +24,22 @@ vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libqomx_core.so
 
+# Required by Camera HAL
+lib/libalParseOTP.so:vendor/lib/libalParseOTP.so
+lib/libalRnB.so:vendor/lib/libalRnB.so
+lib/libalSDE2.so:vendor/lib/libalSDE2.so
+lib/libalSDK.so:vendor/lib/libalSDK.so
+lib/libalSPE.so:vendor/lib/libalSPE.so
+lib/libmmcamera_nubiacustpro.so:vendor/lib/libmmcamera_nubiacustpro.so
+lib/libnubia_effect.so:vendor/lib/libnubia_effect.so
+lib/libNubiaImageAlgorithm.so:vendor/lib/libNubiaImageAlgorithm.so
+lib64/libalParseOTP.so:vendor/lib64/libalParseOTP.so
+lib64/libalRnB.so:vendor/lib64/libalRnB.so
+lib64/libalSDE2.so:vendor/lib64/libalSDE2.so
+lib64/libalSPE.so:vendor/lib64/libalSPE.so
+lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so
+lib64/libNubiaImageAlgorithm.so:vendor/lib64/libNubiaImageAlgorithm.so
+
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
@@ -147,21 +163,9 @@ vendor/lib64/libmmcamera2_stats_lib.so
 
 # Camera Nubia
 lib/libalDU_Utility.so
-lib/libalParseOTP.so
-lib/libalRnB.so
 lib/libalRnBLV.so
-lib/libalSDE2.so
-lib/libalSDK.so
-lib/libalSPE.so
-lib/libmmcamera_nubiacustpro.so
-lib/libnubia_effect.so
-lib/libNubiaImageAlgorithm.so
 lib/libPrettyWaterMark.so
 lib64/libAlgorithm.so
-lib64/libalParseOTP.so
-lib64/libalRnB.so
-lib64/libalSDE2.so
-lib64/libalSPE.so
 lib64/libArcsoftAlgorithm.so
 lib64/libavfilter.so
 lib64/libBigAperture.so
@@ -174,9 +178,7 @@ lib64/libmorpho_panorama_gp.so
 lib64/libmulti_exposure.so
 lib64/libnubia_clone.so
 lib64/libnubia_delay_recorder.so
-lib64/libnubia_effect.so
 lib64/libnubia_trajectory.so
-lib64/libNubiaImageAlgorithm.so
 lib64/libnubiajpeg.so
 lib64/libpanoramahelper.so
 lib64/libPrettyWaterMark.so
