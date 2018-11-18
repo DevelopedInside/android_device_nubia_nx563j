@@ -63,7 +63,7 @@
     <string-array name="config_displayModeMappings" translatable="false">
         <item>0_argb:standard</item>
         <item>1_eye_pro:reading</item>
-        <item>2_srgb1:srgb</item>
+        <item>4_srgb:srgb</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.
