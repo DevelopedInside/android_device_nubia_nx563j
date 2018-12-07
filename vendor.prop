@@ -10,7 +10,7 @@ ro.qcom.ad.sensortype=2
 
 # Camera
 ro.total.camera.number=3
-persist.camera.nubia_postproc=0
+persist.camera.nubia_postproc=1
 
 # Charger
 persist.sys.standard_charger=USB_HVDCP_3
