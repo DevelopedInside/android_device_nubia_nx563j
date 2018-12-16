@@ -166,8 +166,10 @@ lib/libalDU_Utility.so
 lib/libalRnBLV.so
 lib/libPrettyWaterMark.so
 lib64/libAlgorithm.so
-lib64/libArcsoftAlgorithm.so
+lib64/libavcodec.so
+lib64/libavformat.so
 lib64/libavfilter.so
+lib64/libavutil.so
 lib64/libBigAperture.so
 lib64/libBuffer.so
 lib64/libbuffer_manager.so
@@ -178,11 +180,14 @@ lib64/libmorpho_panorama_gp.so
 lib64/libmulti_exposure.so
 lib64/libnubia_clone.so
 lib64/libnubia_delay_recorder.so
+lib64/libnubia_media_player.so
 lib64/libnubia_trajectory.so
 lib64/libnubiajpeg.so
 lib64/libpanoramahelper.so
 lib64/libPrettyWaterMark.so
 lib64/libproductinfo.so
+lib64/libswscale.so
+lib64/libswresample.so
 vendor/lib/libalCMotion.so
 vendor/lib/libAltek_AF.so
 vendor/lib/libIAFalSDE1.so
