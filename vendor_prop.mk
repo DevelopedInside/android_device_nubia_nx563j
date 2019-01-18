@@ -28,10 +28,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.standard_charger=USB_HVDCP_3
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480
-
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.product.perf=1 \

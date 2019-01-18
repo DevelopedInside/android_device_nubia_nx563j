@@ -40,6 +40,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 # Tap-to-wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input4/wake_gesture"
 
+# Display
+TARGET_SCREEN_DENSITY := 480
+
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
