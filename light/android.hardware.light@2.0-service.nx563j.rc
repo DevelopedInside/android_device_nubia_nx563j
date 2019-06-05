@@ -1,0 +1,18 @@
+on init
+    # Nubia LED
+    chown system system /sys/class/leds/nubia_led/blink_mode
+    chmod 0664 /sys/class/leds/nubia_led/blink_mode
+    chown system system  /sys/class/leds/nubia_led/brightness
+    chmod 0644 /sys/class/leds/nubia_led/brightness
+    chown system system /sys/class/leds/nubia_led/fade_parameter
+    chmod 0644 /sys/class/leds/nubia_led/fade_parameter
+    chown system system /sys/class/leds/nubia_led/grade_parameter
+    chmod 0644 /sys/class/leds/nubia_led/grade_parameter
+    chown system system /sys/class/leds/nubia_led/outn
+    chmod 0644 /sys/class/leds/nubia_led/outn
+
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.nx563j
+    class hal
+    user system
+    group system
+    shutdown critical
