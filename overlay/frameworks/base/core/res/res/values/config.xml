@@ -36,18 +36,15 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>5</item>      <!-- pitch black -->
+        <item>1</item>      <!-- pitch black -->
         <item>10</item>
-        <item>15</item>
         <item>50</item>
         <item>100</item>
-        <item>200</item>    <!-- home -->
-        <item>400</item>
-        <item>1000</item>   <!-- office -->
-        <item>2000</item>
-        <item>3000</item>
-        <item>5000</item>
-        <item>10000</item>  <!-- daylight -->
+        <item>400</item>    <!-- home -->
+        <item>900</item>
+        <item>2000</item>   <!-- office -->
+        <item>5000</item>   <!-- daylight -->
+        <item>10000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -55,18 +52,15 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>23</item>     <!-- 0-5 -->
-        <item>35</item>     <!-- 5-10 -->
-        <item>42</item>     <!-- 10-15 -->
-        <item>51</item>     <!-- 15-50 -->
-        <item>62</item>     <!-- 50-100 -->
-        <item>82</item>     <!-- 100-200 -->
-        <item>108</item>    <!-- 200-400 -->
-        <item>146</item>    <!-- 400-1000 -->
-        <item>182</item>    <!-- 1000-2000 -->
-        <item>217</item>    <!-- 2000-3000 -->
-        <item>240</item>    <!-- 3000-5000 -->
-        <item>254</item>    <!-- 5000-10000 -->
+        <item>23</item>     <!-- 0-1 -->
+        <item>46</item>     <!-- 1-10 -->
+        <item>90</item>     <!-- 10-50 -->
+        <item>110</item>    <!-- 50-100 -->
+        <item>120</item>    <!-- 100-400 -->
+        <item>132</item>    <!-- 400-900 -->
+        <item>160</item>    <!-- 900-2000 -->
+        <item>200</item>    <!-- 2000-5000 -->
+        <item>225</item>    <!-- 5000-10000 -->
         <item>255</item>    <!-- 10000+ -->
     </integer-array>
 
