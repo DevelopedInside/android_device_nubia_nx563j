@@ -29,9 +29,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # Tap-to-wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input1/wake_gesture"
 
