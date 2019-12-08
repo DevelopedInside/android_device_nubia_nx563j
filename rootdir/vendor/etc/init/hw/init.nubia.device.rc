@@ -30,9 +30,21 @@ import /vendor/etc/init/hw/init.nubia.touch.lcd.rc
 
 on post-fs-data
     #add device for IRControl
-	chown system system /sys/class/ir_remote/ir_remote/enable
-	chmod 0644 /sys/class/ir_remote/ir_remote/enable
+    chown system system /sys/class/ir_remote/ir_remote/enable
+    chmod 0644 /sys/class/ir_remote/ir_remote/enable
 
-	chown system system /dev/ttyMSM1
-	chmod 0664 /dev/ttyMSM1
+    chown system system /dev/ttyMSM1
+    chmod 0664 /dev/ttyMSM1
+
+    # Wakeup gesture
+    chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/wake_gesture
+    chmod 0644 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/wake_gesture
+
+    # 0dbutton
+    chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/0dbutton
+    chmod 0644 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/0dbutton
+
+    # Reversed keys
+    chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/reversed_keys
+    chmod 0644 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/reversed_keys
 

@@ -30,7 +30,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_CONFIG := lineageos_nx563j_defconfig
 
 # Tap-to-wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input1/wake_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input4/wake_gesture"
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private

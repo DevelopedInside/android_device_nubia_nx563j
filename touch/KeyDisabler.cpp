@@ -26,7 +26,7 @@ namespace touch {
 namespace V1_0 {
 namespace implementation {
 
-constexpr const char kControlPath[] = "/sys/class/input/input1/0dbutton";
+constexpr const char kControlPath[] = "/sys/class/input/input4/0dbutton";
 
 KeyDisabler::KeyDisabler() {
     mHasKeyDisabler = !access(kControlPath, F_OK);

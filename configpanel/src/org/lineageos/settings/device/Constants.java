@@ -28,7 +28,7 @@ public class Constants {
     public static final String BUTTON_SWAP_KEY = "button_swap";
 
     // Nodes
-    public static final String TOUCHPANEL_BUTTON_SWAP_NODE = "/sys/class/input/input1/reversed_keys";
+    public static final String TOUCHPANEL_BUTTON_SWAP_NODE = "/sys/class/input/input4/reversed_keys";
 
     // Holds <preference_key> -> <proc_node> mapping
     public static final Map<String, String> sBooleanNodePreferenceMap = new HashMap<>();
