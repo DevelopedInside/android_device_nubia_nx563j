@@ -135,7 +135,6 @@ int getBatteryStatus(const LightState)
     int err;
 
     char status_str[16];
-    int capacity;
 
     err = readStr(BATTERY_CHARGING_STATUS, status_str, sizeof(status_str));
     if (err <= 0) {
@@ -145,7 +144,16 @@ int getBatteryStatus(const LightState)
 
     ALOGI("battery status: %d, %s", err, status_str);
 
-    capacity = readStr(BATTERY_CAPACITY, status_str, sizeof(status_str));;
+    char capacity_str[6];
+    int capacity;
+
+    err = readStr(BATTERY_CAPACITY, capacity_str, sizeof(capacity_str));
+    if (err <= 0) {
+        ALOGI("failed to read battery capacity: %d", err);
+        return BATTERY_UNKNOWN;
+    }
+
+    capacity = atoi(capacity_str);
 
     ALOGI("battery capacity: %d", capacity);
 
