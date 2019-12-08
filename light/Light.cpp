@@ -39,7 +39,7 @@
 #define LED_GRADE_BUTTON 8
 #define LED_GRADE_HOME 8
 #define LED_GRADE_HOME_BATTERY_LOW 0
-#define LED_GRADE_HOME_BATTERY_full 8 
+#define LED_GRADE_HOME_BATTERY_FULL 6 
 #define LED_GRADE_HOME_NOTIFICATION 6
 #define LED_GRADE_HOME_BATTERY 6
 #define LED_GRADE_HOME_ATTENTION 6
@@ -209,7 +209,7 @@ static void handleNubiaLed(const LightState& state, int source)
     }
     else if (g_battery == BATTERY_FULL) {
         mode = BLINK_MODE_BREATH_ONCE;
-        grade = LED_GRADE_HOME_BATTERY_full;
+        grade = LED_GRADE_HOME_BATTERY_FULL;
     }
     else if (g_battery == BATTERY_LOW) {
         mode = BLINK_MODE_BREATH;
