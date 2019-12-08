@@ -86,6 +86,21 @@ static int readStr(std::string path, char *buffer, size_t size)
     return 1;
 }
 
+static int set(std::string path, char *buffer, size_t size)
+{
+
+    std::ofstream file(path);
+
+    if (!file.is_open()) {
+        ALOGW("failed to write %s", path.c_str());
+        return -1;
+    }
+
+    file.write(buffer, size);
+    file.close();
+    return 1;
+}
+
 static void set(std::string path, int value) {
     set(path, std::to_string(value));
 }
@@ -214,14 +229,17 @@ static void handleNubiaLed(const LightState& state, int source)
     else if (g_battery == BATTERY_CHARGING) {
         mode = BLINK_MODE_BREATH;
         grade = LED_GRADE_HOME_BATTERY;
+        fade_len = sprintf(fade, "%d %d %d\n", 3, 0, 4);
     }
     else if (g_battery == BATTERY_FULL) {
         mode = BLINK_MODE_BREATH_ONCE;
         grade = LED_GRADE_HOME_BATTERY_FULL;
+        fade_len = sprintf(fade, "%d %d %d\n", 3, 0, 4);
     }
     else if (g_battery == BATTERY_LOW) {
         mode = BLINK_MODE_BREATH;
         grade = LED_GRADE_HOME_BATTERY_LOW;
+        fade_len = sprintf(fade, "%d %d %d\n", 3, 0, 4);
     }
     else if (g_ongoing & ONGOING_BUTTONS) {
         mode = BLINK_MODE_ON;
@@ -237,8 +255,10 @@ static void handleNubiaLed(const LightState& state, int source)
     }
 
     set(LED_CHANNEL, LED_CHANNEL_HOME);
-    set(LED_FADE, "3 0 4");
     set(LED_GRADE, grade);
+    if (fade_len > 0) {
+        set(LED_FADE, fade, fade_len);
+    }
     set(LED_BLINK_MODE, mode);
 }
 
