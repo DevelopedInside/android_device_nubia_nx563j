@@ -17,10 +17,7 @@
 # Cabl
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=2 \
-    ro.vendor.display.cabl=2 \
-    ro.qcom.ad=1 \
-    ro.qcom.ad.calib.data=/vendor/etc/calib.cfg \
-    ro.qcom.ad.sensortype=2
+    ro.vendor.display.cabl=2
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -61,7 +61,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Display configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/display/calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calib.cfg \
     $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
 
 # Fingerprint
