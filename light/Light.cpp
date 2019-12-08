@@ -39,7 +39,7 @@
 #define LED_GRADE_BUTTON 8
 #define LED_GRADE_HOME 8
 #define LED_GRADE_HOME_BATTERY_LOW 0
-#define LED_GRADE_HOME_BATTERY_full 8 
+#define LED_GRADE_HOME_BATTERY_FULL 6 
 #define LED_GRADE_HOME_NOTIFICATION 6
 #define LED_GRADE_HOME_BATTERY 6
 #define LED_GRADE_HOME_ATTENTION 6
@@ -135,7 +135,6 @@ int getBatteryStatus(const LightState)
     int err;
 
     char status_str[16];
-    int capacity;
 
     err = readStr(BATTERY_CHARGING_STATUS, status_str, sizeof(status_str));
     if (err <= 0) {
@@ -145,7 +144,16 @@ int getBatteryStatus(const LightState)
 
     ALOGI("battery status: %d, %s", err, status_str);
 
-    capacity = readStr(BATTERY_CAPACITY, status_str, sizeof(status_str));;
+    char capacity_str[6];
+    int capacity;
+
+    err = readStr(BATTERY_CAPACITY, capacity_str, sizeof(capacity_str));
+    if (err <= 0) {
+        ALOGI("failed to read battery capacity: %d", err);
+        return BATTERY_UNKNOWN;
+    }
+
+    capacity = atoi(capacity_str);
 
     ALOGI("battery capacity: %d", capacity);
 
@@ -209,7 +217,7 @@ static void handleNubiaLed(const LightState& state, int source)
     }
     else if (g_battery == BATTERY_FULL) {
         mode = BLINK_MODE_BREATH_ONCE;
-        grade = LED_GRADE_HOME_BATTERY_full;
+        grade = LED_GRADE_HOME_BATTERY_FULL;
     }
     else if (g_battery == BATTERY_LOW) {
         mode = BLINK_MODE_BREATH;
