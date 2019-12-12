@@ -1,0 +1,8 @@
+# IR Remote
+type sysfs_ir_remote, sysfs_type, fs_type;
+
+# Light Sensor
+type sysfs_light_sensor, sysfs_type, fs_type;
+
+# Proximity Sensor
+type sysfs_proximity_sensor, sysfs_type, fs_type;

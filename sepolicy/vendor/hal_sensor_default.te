@@ -1,0 +1,7 @@
+# Light Sensor
+allow hal_sensors_default sysfs_light_sensor:dir search;
+allow hal_sensors_default sysfs_light_sensor:file { read write open };
+
+# Proximity Sensor
+allow hal_sensors_default sysfs_proximity_sensor:dir search;
+allow hal_sensors_default sysfs_proximity_sensor:file { read open write };

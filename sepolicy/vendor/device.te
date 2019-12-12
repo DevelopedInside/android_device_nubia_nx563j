@@ -1,0 +1,2 @@
+# IR Remote
+type ir_remote_device, dev_type;

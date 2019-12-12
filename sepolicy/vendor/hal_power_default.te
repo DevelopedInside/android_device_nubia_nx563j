@@ -1,0 +1,2 @@
+allow hal_power_default sysfs_sectouch:dir search;
+allow hal_power_default sysfs_sectouch:file { open write };
