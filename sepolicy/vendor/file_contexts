@@ -1,7 +1,7 @@
 # Fingerprint
 /dev/fpc                                                                                                        u:object_r:fingerprint_device:s0
 /sys/devices/soc/1.fpc1020(/.*)?                                                                                u:object_r:sysfs_fingerprint:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint\.fpc@2\.1-service                                     u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint\.fpc@2\.1-service                     u:object_r:hal_fingerprint_default_exec:s0
 
 # IR Remote
 /dev/ttyMSM1                                                                                                    u:object_r:ir_remote_device:s0
@@ -12,13 +12,13 @@
 # Light HAL
 /sys/class/leds(/.*)?                                                                                           u:object_r:sysfs_leds:s0
 /sys/devices/soc/800f000\.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/modalias    u:object_r:sysfs_leds:s0
-/vendor/bin/hw/android\.hardware\.light@2\.0-service\.nx563j                                                    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx563j                                    u:object_r:hal_light_default_exec:s0
 
 # Light sensor
 /sys/devices/virtual/light/light(/.*)?                                                                          u:object_r:sysfs_light_sensor:s0
 
 # Lineage hardware
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.nx563j                                                      u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.nx563j                                      u:object_r:hal_lineage_touch_default_exec:s0
 
 # Proximity
 /sys/devices/virtual/proximity/proximity(/.*)?                                                                  u:object_r:sysfs_proximity_sensor:s0
