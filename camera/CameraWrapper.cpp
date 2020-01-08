@@ -73,10 +73,10 @@ static int camera_device_open(const hw_module_t* module, const char* name,
     int rv = -EINVAL;
 
     // Check HAL3 enabled
-    property_get("persist.camera.HAL3.enabled", prop, "1");
+    property_get("persist.vendor.camera.HAL3.enabled", prop, "1");
     int isHAL3Enabled = atoi(prop);
 
-    ALOGV("%s: property persist.camera.HAL3.enabled is set to %d", __FUNCTION__, isHAL3Enabled);
+    ALOGV("%s: property persist.vendor.camera.HAL3.enabled is set to %d", __FUNCTION__, isHAL3Enabled);
 
 
     if (name != NULL) {
