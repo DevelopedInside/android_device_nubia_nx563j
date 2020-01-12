@@ -29,6 +29,14 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_nx563j_defconfig
 
+# Partitions
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_VENDORIMAGE_PARTITION_SIZE := 471859200
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
+
 # Tap-to-wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input4/wake_gesture"
 

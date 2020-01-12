@@ -90,5 +90,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk scripts
 PRODUCT_PACKAGES += \
+    fstab.qcom
+
+PRODUCT_PACKAGES += \
     init.nubia.device.rc \
     init.nubia.touch.lcd.rc
