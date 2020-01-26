@@ -41,7 +41,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    libNubiaImageAlgorithm_shim
+    libNubiaImageAlgorithm_shim \
+    libfui
 
 # ConfigPanel
 PRODUCT_PACKAGES += \
@@ -91,3 +92,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.nubia.device.rc \
     init.nubia.touch.lcd.rc
+
+# VNDK
+# Update this list with what each blob is actually for
+# libgui_vendor: libnubia_effect.so, camera.msm8998.so
+PRODUCT_PACKAGES += \
+    libgui_vendor
