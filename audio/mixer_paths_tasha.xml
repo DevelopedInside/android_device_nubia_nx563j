@@ -80,20 +80,8 @@
     <ctl name="COMP2 Switch" value="1" />
     <ctl name="COMP7 Switch" value="0" />
     <ctl name="COMP8 Switch" value="0" />
-    <!-- <ctl name="RX HPH Mode" value="CLS_H_LP" /> -->
     <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
-
-    <!-- TI TAS2555 SPK Configuration -->
-    <!-- kernel snd control : https://github.com/DevelopedInside/android_kernel_nubia_msm8998/blob/cm-14.1/sound/soc/codecs/tas2555-codec.c#L714 -->
-    <!-- Configuration list 
-         ID : Description
-         ?  : "Snapshot 1 - 48 KHz - ROM Mode"
-         0  : "Snapshot 5 - 48 KHz - Tuning Mode (dolby bypass 2dB)" <- default 
-         1  : "Snapshot 3 - 48 KHz - Tuning Mode (voice)"
-         2  : "Snapshot 4 - 48 KHz - Tuning Mode (music TI)"
-    -->
     <ctl name="Configuration" value="0" />
-    <ctl name="DAC Playback Volume" value="15" /> <!-- max 15 dB. Formula: value * 100 * 0.01dB -->
 
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="0" />
@@ -2304,7 +2292,6 @@
     </path>
 
     <path name="speaker">
-        <ctl name="Configuration" value="0" />
         <!-- <ctl name="COMP7 Switch" value="1" />
         <ctl name="COMP8 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
