@@ -21,8 +21,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.total.camera.number=3 \
-    persist.camera.nubia_postproc=1
+    persist.camera.nubia_postproc=1 \
+    ro.total.camera.number=3
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -34,5 +34,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.thermal.product=0 \
-    persist.product.perf=1
+    persist.product.perf=1 \
+    ro.thermal.product=0
