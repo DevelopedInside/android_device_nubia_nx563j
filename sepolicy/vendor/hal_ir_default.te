@@ -1,0 +1,2 @@
+# IR Remote
+allow hal_ir_default ir_remote_device:chr_file rw_file_perms;
