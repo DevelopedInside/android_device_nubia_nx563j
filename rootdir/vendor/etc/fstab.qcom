@@ -8,7 +8,7 @@
 # Non-A/B fstab.qcom variant
 #<src>                                   <mnt_point>               <type> <mnt_flags and options>                          <fs_mgr_flags>
 /dev/block/bootdevice/by-name/system     /                         ext4   ro,barrier=1,discard                             wait
-/dev/block/bootdevice/by-name/userdata   /data                     ext4   noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard wait,check,encryptable=footer,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata   /data                     ext4   noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard wait,check,fileencryption=ice,quota,reservedsize=128M
 /dev/block/bootdevice/by-name/misc       /misc                     emmc   defaults                                         defaults
 /dev/block/bootdevice/by-name/modem      /vendor/firmware_mnt      vfat   ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait
 /dev/block/bootdevice/by-name/bluetooth  /vendor/bt_firmware       vfat   ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait
@@ -17,7 +17,7 @@
 /dev/block/bootdevice/by-name/cache      /cache                    ext4   noatime,nosuid,nodev,barrier=1                   wait
 /dev/block/bootdevice/by-name/parameter  /parameter                emmc   defaults                                         defaults
 
-/devices/soc/c0a4900.sdhci/mmc_host*     /storage/sdcard1          vfat   nosuid,nodev                                     wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/soc/c0a4900.sdhci/mmc_host*     /storage/sdcard1          vfat   nosuid,nodev                                     wait,voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/*/xhci-hcd.0.auto*              /storage/usba             vfat   nosuid,nodev                                     wait,voldmanaged=usba:auto
 
 /dev/block/zram0                         none                      swap   defaults                                         zramsize=50%,max_comp_streams=8
