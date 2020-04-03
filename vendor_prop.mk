@@ -21,7 +21,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.nubia_postproc=1 \
     ro.total.camera.number=3
 
 # Charger
