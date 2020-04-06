@@ -411,14 +411,14 @@ vendor/firmware/BCM20797B0_002.001.043.2564.0002_Generic_NCD_Unsigned_configdata
 vendor/firmware/BCM20797B0_002.001.043.2565.0005_Generic_NCD_Unsigned_configdata.ncd
 
 # Thermal nubia config
-etc/.tp/.thermal-mode-00-01.conf
-etc/.tp/.thermal-mode-00-02.conf
-etc/.tp/.thermal-mode-00-03.conf
-etc/.tp/.thermal-mode-00-04.conf
-etc/.tp/.thermal-mode-01-01.conf
-etc/.tp/.thermal-mode-01-02.conf
-etc/.tp/.thermal-mode-01-03.conf
-etc/.tp/.thermal-mode-01-04.conf
+etc/.tp/.thermal-mode-00-01.conf:vendor/etc/.tp/.thermal-mode-00-01.conf
+etc/.tp/.thermal-mode-00-02.conf:vendor/etc/.tp/.thermal-mode-00-02.conf
+etc/.tp/.thermal-mode-00-03.conf:vendor/etc/.tp/.thermal-mode-00-03.conf
+etc/.tp/.thermal-mode-00-04.conf:vendor/etc/.tp/.thermal-mode-00-04.conf
+etc/.tp/.thermal-mode-01-01.conf:vendor/etc/.tp/.thermal-mode-01-01.conf
+etc/.tp/.thermal-mode-01-02.conf:vendor/etc/.tp/.thermal-mode-01-02.conf
+etc/.tp/.thermal-mode-01-03.conf:vendor/etc/.tp/.thermal-mode-01-03.conf
+etc/.tp/.thermal-mode-01-04.conf:vendor/etc/.tp/.thermal-mode-01-04.conf
 
 # TP firmware
 etc/firmware/nubia_tp_jdi_fw.img:vendor/firmware/nubia_tp_jdi_fw.img
