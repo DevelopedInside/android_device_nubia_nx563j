@@ -3,6 +3,3 @@ allow init sysfs_fingerprint:file { open write };
 
 # Light HAL
 allow init sysfs_graphics:file { open read write };
-
-# IR Control
-allow init tee_device:chr_file { ioctl write };

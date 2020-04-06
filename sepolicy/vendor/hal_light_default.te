@@ -3,3 +3,5 @@ allow hal_power_default sysfs_sectouch:file { open write };
 
 allow hal_light_default sysfs_healthd:dir search;
 allow hal_light_default sysfs_healthd:file { getattr open read };
+
+allow hal_light_default sysfs:file { getattr open write };
