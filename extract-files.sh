@@ -18,8 +18,20 @@
 
 function blob_fixup() {
     case "${1}" in
+    # Patch blobs for VNDK
+    vendor/lib/hw/camera.msm8998.so)
+        sed -i "s|libgui.so|libfui.so|g" "${2}"
+        patchelf --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        patchelf --remove-needed "libandroid.so" "${2}"
+        ;;
+    vendor/lib/libnubia_effect.so | vendor/lib64/libnubia_effect.so)
+        sed -i "s|libgui.so|libfui.so|g" "${2}"
+        ;;
     vendor/lib/libNubiaImageAlgorithm.so)
         patchelf --add-needed "libNubiaImageAlgorithm_shim.so" "${2}"
+        ;;
+    vendor/lib/libarcsoft_picauto.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
         ;;
     esac
 }

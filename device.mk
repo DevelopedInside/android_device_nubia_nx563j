@@ -96,5 +96,7 @@ PRODUCT_PACKAGES += \
 # VNDK
 # Update this list with what each blob is actually for
 # libgui_vendor: libnubia_effect.so, camera.msm8998.so
+# libstdc++: camera.msm8998
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libgui_vendor \
+    libstdc++.vendor
