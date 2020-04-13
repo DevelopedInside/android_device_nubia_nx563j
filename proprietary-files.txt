@@ -404,6 +404,7 @@ etc/libnfc-brcm-20797b00.conf:vendor/etc/libnfc-brcm-20797b00.conf
 etc/nfcee_access.xml
 vendor/lib64/hw/nfc_nci.bcm2079x.default.so:vendor/lib64/hw/nfc_nci.bcm2079x.msm8998.so
 vendor/firmware/Generic_unsigned_706.ncd
+vendor/firmware/Generic_unsigned_1021_1.ncd
 vendor/firmware/BCM20797A1_001.002.015.2562.0011_Generic_I2C_NCD_Unsigned_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0007_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0007_I2C_configdata.ncd
 vendor/firmware/BCM20797B0_002.001.043.2562.0010_Generic_I2C_NCD_Unsigned_BCM20797B0_002.001.043.2562.0010_I2C_configdata.ncd
