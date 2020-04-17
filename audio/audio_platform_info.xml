@@ -114,9 +114,9 @@
 
         <!-- Speaker -->
         <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="voice-speaker-2"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="PRI_MI2S_RX" />
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker" interface="PRI_MI2S_RX" />
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="voice-speaker-2" interface="PRI_MI2S_RX" />
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
