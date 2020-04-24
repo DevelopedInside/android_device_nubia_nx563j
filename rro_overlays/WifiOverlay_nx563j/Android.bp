@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "WifiOverlay_nx563j",
+    theme: "WifiOverlay_nx563j",
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}
