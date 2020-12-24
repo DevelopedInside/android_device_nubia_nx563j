@@ -42,7 +42,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     libNubiaImageAlgorithm_shim \
-    libfui
+    libfui \
+    libui_shim.vendor:32
 
 # ConfigPanel
 PRODUCT_PACKAGES += \
