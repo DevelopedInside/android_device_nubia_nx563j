@@ -23,10 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.total.camera.number=3
 
-# Charger
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.standard_charger=USB_HVDCP_3
-
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.lcd.backlight.max=4095 \
