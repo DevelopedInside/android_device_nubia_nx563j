@@ -395,8 +395,6 @@ lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@
 vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
 vendor/bin/qfp-daemon
 vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc|fb1fa6db8c56ed18453255a733a9322e16bc8abd
-vendor/framework/com.fingerprints.extension.jar
-vendor/lib64/com.fingerprints.extension@1.0_vendor.so
 vendor/lib64/libqfp-service.so
 
 # NFC firmware
