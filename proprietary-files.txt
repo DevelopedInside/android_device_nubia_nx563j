@@ -401,7 +401,6 @@ vendor/lib64/libqfp-service.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf:vendor/etc/libnfc-brcm-20797b00.conf
-etc/nfcee_access.xml
 vendor/lib64/hw/nfc_nci.bcm2079x.default.so:vendor/lib64/hw/nfc_nci.bcm2079x.msm8998.so
 vendor/firmware/Generic_unsigned_706.ncd
 vendor/firmware/Generic_unsigned_1021_1.ncd
