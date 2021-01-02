@@ -36,6 +36,12 @@ on post-fs-data
     chown system system /dev/ttyMSM1
     chmod 0664 /dev/ttyMSM1
 
+    # NFC
+    chmod 777 /dev/bcm2079x
+    chown nfc nfc /dev/bcm2079x
+    mkdir /data/nfc 770 nfc nfc
+    mkdir /data/vendor/nfc 770 nfc nfc
+
     # Wakeup gesture
     chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/wake_gesture
     chmod 0644 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input4/wake_gesture

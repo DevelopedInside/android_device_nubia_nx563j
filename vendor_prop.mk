@@ -22,6 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.total.camera.number=3
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=bcm2079x.default
+
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.lcd.backlight.max=4095 \

@@ -20,5 +20,8 @@
 # Lineage hardware
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.nx563j                                      u:object_r:hal_lineage_touch_default_exec:s0
 
+# NFC
+/dev/bcm2079x                                                                                                   u:object_r:nfc_device:s0
+
 # Proximity
 /sys/devices/virtual/proximity/proximity(/.*)?                                                                  u:object_r:sysfs_proximity_sensor:s0
