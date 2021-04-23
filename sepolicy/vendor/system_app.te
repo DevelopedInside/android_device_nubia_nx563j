@@ -1,1 +1,0 @@
-allow system_app sysfs_sectouch:dir search;
