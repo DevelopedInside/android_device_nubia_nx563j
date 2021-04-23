@@ -34,5 +34,9 @@
             <name>IKeyDisabler</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IKeySwapper</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 </manifest>

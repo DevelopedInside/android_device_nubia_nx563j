@@ -46,10 +46,6 @@ PRODUCT_PACKAGES += \
     libfui \
     libui_shim.vendor:32
 
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
-
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
