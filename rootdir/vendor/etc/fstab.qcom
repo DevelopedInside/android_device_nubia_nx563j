@@ -20,4 +20,4 @@
 /devices/soc/c0a4900.sdhci/mmc_host*     /storage/sdcard1          vfat   nosuid,nodev                                     wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/*/xhci-hcd.0.auto*              /storage/usba             vfat   nosuid,nodev                                     wait,voldmanaged=usba:auto
 
-/dev/block/zram0                         none                      swap   defaults                                         zramsize=3221225472,max_comp_streams=8
+/dev/block/zram0                         none                      swap   defaults                                         zramsize=50%,max_comp_streams=8
