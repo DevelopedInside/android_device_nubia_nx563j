@@ -22,9 +22,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
-
 # Inherit from msm8998-common
 $(call inherit-product, device/nubia/msm8998-common/msm8998.mk)
 
