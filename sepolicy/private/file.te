@@ -1,2 +1,0 @@
-# Touchscreen
-type sysfs_tp_revkeys, sysfs_type, fs_type;

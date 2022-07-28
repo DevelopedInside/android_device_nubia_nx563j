@@ -6,3 +6,6 @@ type sysfs_light_sensor, sysfs_type, fs_type;
 
 # Proximity Sensor
 type sysfs_proximity_sensor, sysfs_type, fs_type;
+
+# Touchscreen
+type sysfs_tp_revkeys, sysfs_type, fs_type;

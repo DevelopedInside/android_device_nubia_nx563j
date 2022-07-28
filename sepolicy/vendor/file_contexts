@@ -25,3 +25,6 @@
 
 # Proximity
 /sys/devices/virtual/proximity/proximity(/.*)?                                                                  u:object_r:sysfs_proximity_sensor:s0
+
+# Touchscreen
+/sys/devices/soc/c179000\.i2c/i2c-5/5-0020/input/input[0-9]+/reversed_keys                                      u:object_r:sysfs_tp_revkeys:s0

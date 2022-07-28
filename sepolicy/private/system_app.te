@@ -1,2 +1,0 @@
-# Allow ConfigPanel to work
-allow system_app sysfs_tp_revkeys:file rw_file_perms;
